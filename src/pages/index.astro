@@ -1,25 +1,94 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
+import "../styles/global.css";
+import ProfileAvatar from "@/components/Avatar";
+import JobCard from "@/components/JobCard";
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+const jobs = [
+  {
+    title: "Desarrollador Full Stack",
+    organization: "Ecoprintq Chile",
+    description: [
+      "Responsable del desarrollo del producto principal de la empresa, una aplicación en tiempo real que procesa grandes volúmenes de datos concurrentes. Implementé nuevas funcionalidades y optimizaciones que mejoraron significativamente la eficiencia y calidad del sistema, lo que permitió escalar el producto e impulsar su adopción por parte de clientes corporativos de alto perfil como Falabella, Ricoh LATAM, HP y Agrosuper.",
+      "Se abordaron incidencias críticas de origen desconocido en el producto principal, mediante una estrategia de investigación y pruebas estructuradas. El proceso no solo resolvió los problemas principales, sino que también permitió optimizar otros componentes del sistema, mejorando la estabilidad general del producto.",
+    ],
+    start: "SEP 2024",
+  },
+  {
+    title: "Desarrollador Full Stack",
+    organization: "Acroventus SPA",
+    description: [
+      "Liderazgo del desarrollo full stack de la plataforma soldautos.cl, un sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares. Me encargué del diseño de la arquitectura, coordinación con desarrolladores junior, comunicación directa con el cliente y desarollo de las funcionalidades. El sitio lleva más de 2 años en producción y cuenta con un catálogo activo de más de mil publicaciones.",
+      "Desarrollo de sistema de acreditación y mejora continua para la Universidad de La Frontera, que digitalizó completamente el proceso de recolección de evidencias para la acreditación institucional, reemplazando flujos manuales y acelerando significativamente los tiempos del proceso de acreditación de la universidad.",
+      "Implementación de buenas prácticas en el desarrollo de software, incorporando, arquitecturas limpias, principios SOLID y estrategias de testing. Estas iniciativas permitieron estandarizar metodologías y establecer guías reutilizables que fueron adoptadas por otros equipos y proyectos futuros dentro de la empresa.",
+      "Desarrollo de herramientas internas para optimizar procesos clave de la empresa, como un sistema para digitalizar la toma de requerimientos y una CLI para generar nuevos proyectos con flujos preconfigurados (autenticación, despliegues, integraciones con APIs como WhatsApp y Slack). Estas soluciones, aumentaron la productividad y redujeron tiempos de desarrollo de los nuevos proyectos.",
+    ],
+    start: "NOV 2022",
+    end: "MAY 2024",
+  },
+  {
+    title: "Desarrollador Full stack",
+    organization: "MINEDUC-UFRO",
+    description: [
+      "Desarrollo de un sistema de búsqueda avanzada de convenios para la Universidad de La Frontera, implementando funcionalidades tanto en frontend como backend. La plataforma digitalizó el acceso a convenios nacionales e internacionales, optimizando un proceso que antes se realizaba manualmente. Gracias al impacto del proyecto, la universidad decidió seguir financiando nuevas iniciativas con nuestro equipo de desarrollo.",
+      "Desarrollo y participación en el diseño arquitectónico de SISDAE, un sistema para la gestión de recursos y beneficios estudiantiles de la Universidad de La Frontera. El desempeño en este y otros proyectos despertó el interés de Acroventus, empresa externa encargada de otros desarrollos para la universidad, quienes posteriormente me ofrecieron incorporarme a su equipo de forma indefinida.",
+    ],
+    start: "MAR 2022",
+    end: "OCT 2022",
+  },
+];
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Rodrigo Pardo</title>
+  </head>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
+  <body class="bg-gray-50">
+    <div class="max-w-screen-lg m-auto flex flex-col gap-8">
+      <div class="flex justify-center items-center gap-4 my-20">
+        <ProfileAvatar client:load />
+        <div>
+          <h1 class="text-6xl">Rodrigo Pardo Gatica</h1>
+          <p class="text-xl">
+            Ingeniero de software con más de 3 años de experiencia,
+            especializado en desarrollo web y arquitectura de software.
+            Apasionado por la calidad del código, el diseño escalable y la
+            mejora continua.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h2 class="text-2xl">Experiencia</h2>
+        {
+          jobs.map((job) => (
+            <JobCard
+              title={job.title}
+              organization={job.organization}
+              description={job.description}
+              startDate={job.start}
+              endDate={job.end}
+            />
+          ))
+        }
+      </div>
+      <div class="flex flex-col gap-4">
+        <h2 class="text-2xl">Proyectos</h2>
+        {
+          jobs.map((job) => (
+            <JobCard
+              title={job.title}
+              organization={job.organization}
+              description={job.description}
+              startDate={job.start}
+              endDate={job.end}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </body>
 </html>
