@@ -1,13 +1,12 @@
-import Image from "astro/components/Image.astro";
-
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./ui/card";
+} from "@/components/ui/card";
+import { TooltipProvider, Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { Button } from "@/components/ui/button";
 
 interface Technology {
   name: string;
@@ -23,19 +22,28 @@ interface Props {
 
 export default function ProjectCard({ title, description, stack, url }: Props) {
   return (
-    <Card>
+    <Card className="border bg-background-2 basis-[49%]">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle className="text-white">{title}</CardTitle>
+        <CardDescription className="">{description}</CardDescription>
       </CardHeader>
-      <CardFooter className="flex gap-2">
+      <CardFooter>
         {
-          <ul className="flex gap-2 items-center">
-            {stack.map((technology) => (
-              <li key={technology.name}>
-                <img src={technology.icon} />
-              </li>
-            ))}
+          <ul className="flex flew-row gap-2 flew-wrap">
+            <TooltipProvider>
+              {stack.map((technology) => (
+                <Tooltip key={technology.name}>
+                  <TooltipTrigger asChild>
+                    <Button className="bg-background border rounded-lg p-3 w-14 h-14 hover:bg-neutral-900">
+                      <img src={technology.icon} alt={technology.name} />
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="text-white">Hola Mundo</p>
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+            </TooltipProvider>
           </ul>
         }
       </CardFooter>

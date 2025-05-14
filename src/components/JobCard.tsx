@@ -10,20 +10,19 @@ interface Props {
 
 export default function JobCard({ title, description, organization, startDate, endDate }: Props) {
   return (
-    <Card>
+    <Card className="border bg-background-2">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{organization}</CardDescription>
+        <CardTitle className="text-white">{title}</CardTitle>
+        <CardDescription className="text-primary">{organization}</CardDescription>
       </CardHeader>
-      <CardContent>
-        {Array.isArray(description) ? (<ul className="list-disc pl-4">{description.map(d => (<li key={d}>{d}</li>))}</ul>) : <p>{description}</p>}
+      <CardContent className="text-white">
+        {Array.isArray(description) ? (<ul className="list-disc pl-4">{description.map(d => (<li className="marker:text-primary" key={d}>{d}</li>))}</ul>) : <p>{description}</p>}
       </CardContent>
-      <CardFooter className="flex gap-2">
-        <p>{startDate}</p>
+      <CardFooter className="flex gap-2 w-fit text-primary bg-background border rounded-lg p-2 ml-6 text-sm">
+        <p className="">{startDate}</p>
         <p>-</p>
-        <p>{endDate ?? 'Actualidad' }</p>
+        <p className="">{endDate ?? 'Actualidad'}</p>
       </CardFooter>
     </Card>
-
   )
 }

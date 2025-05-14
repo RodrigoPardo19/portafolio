@@ -4,6 +4,7 @@ import ProfileAvatar from "@/components/Avatar";
 import JobCard from "@/components/JobCard";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const jobs = [
   {
@@ -144,21 +145,22 @@ const projects = [
     <title>Rodrigo Pardo</title>
   </head>
 
-  <body class="max-w-screen-lg m-auto bg-gray-50">
+  <body class="max-w-screen-lg m-auto bg-background text-white">
     <main class="flex flex-col gap-8">
-      <div class="flex justify-center items-center gap-4 my-20">
+      <Navbar />
+      <section class="flex flex-col justify-center items-center gap-4 my-20" id="profile">
         <ProfileAvatar client:load />
-        <div class="flex flex-col gap-4">
+        <div class="flex justify-center items-center flex-col gap-4">
           <h1 class="text-6xl">Rodrigo Pardo Gatica</h1>
-          <p class="text-xl">
-            <strong>Ingeniero de software</strong> con más de <strong>3 años de experiencia</strong>,
+          <p class="text-3xl text-center">
+            <strong class="text-primary">Ingeniero de software</strong> con más de <strong class="text-primary">3 años de experiencia</strong>,
             especializado en desarrollo web y arquitectura de software.
             Apasionado por la calidad del código, el diseño escalable y la
             mejora continua.
           </p>
         </div>
-      </div>
-      <div class="flex flex-col gap-4">
+      </section>
+      <section class="flex flex-col gap-4" id="experience">
         <h2 class="text-2xl">Experiencia</h2>
         {
           jobs.map((job) => (
@@ -171,20 +173,20 @@ const projects = [
             />
           ))
         }
-      </div>
-      <div class="flex flex-col gap-4">
+      </section>
+      <section class="flex flex-col gap-4" id="projects">
         <h2 class="text-2xl">Proyectos</h2>
-        {
-          projects.map((job) => (
+        <div class="flex gap-4 flex-wrap">
+          {projects.map((job) => (
             <ProjectCard
               title={job.title}
               description={job.description}
               url={job.url}
               stack={job.stack}
             />
-          ))
-        }
-      </div>
+          ))}
+        </div>
+      </section>
     </main>
     <Footer  year={2025}/>
   </body>
