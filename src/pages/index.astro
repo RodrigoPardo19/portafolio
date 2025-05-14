@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import ProfileAvatar from "@/components/Avatar";
 import JobCard from "@/components/JobCard";
+import ProjectCard from "@/components/ProjectCard";
+import Footer from "@/components/Footer";
 
 const jobs = [
   {
@@ -36,6 +38,101 @@ const jobs = [
     end: "OCT 2022",
   },
 ];
+
+const projects = [
+  {
+    title: "Ecoendpoint",
+    description:
+      "Plataforma en tiempo real de monitoreo de impresoras y automatización de tareas",
+    url: "https://admin.ecoendpoint.com/v2rc/#/auth/login",
+    stack: [
+      { name: "Node", icon: "/images/logo-nodejs.svg" },
+      { name: "Express", icon: "/images/logo-express.svg" },
+      { name: "Angular", icon: "/images/logo-angular.svg" },
+      { name: "PostgreSQL", icon: "/images/logo-postgresql.svg" },
+      { name: "GCP", icon: "/images/logo-google-cloud.svg" },
+      { name: "Socket.io", icon: "/images/logo-socket-io.svg" },
+      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
+    ],
+  },
+  {
+    title: "Soldautos",
+    description: "Sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares.",
+    url: "https://www.soldautos.cl",
+    stack: [
+      { name: "Node", icon: "/images/logo-nodejs.svg" },
+      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
+      { name: "Vue", icon: "/images/logo-vue.svg" },
+      { name: "Nuxt", icon: "/images/logo-nuxt.svg" },
+      { name: "AWS", icon: "/images/logo-aws.svg" },
+      { name: "MongoDB", icon: "/images/logo-mongodb.svg" },
+      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
+    ],
+  },
+  {
+    title: "Buscador de convenios",
+    description:
+      "Sistema de búsqueda de convenios nacionales e internacionales de la Universidad de La Frontera",
+    url: "",
+    stack: [
+      { name: "Node", icon: "/images/logo-nodejs.svg" },
+      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
+      { name: "React", icon: "/images/logo-react.svg" },
+      { name: "Next", icon: "/images/logo-nextjs.svg" },
+      { name: "MySQL", icon: "/images/logo-mysql.svg" },
+      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
+    ],
+  },
+  {
+    title: "SISDAE",
+    description: "",
+    url: "",
+    stack: [
+      { name: "Node", icon: "/images/logo-nodejs.svg" },
+      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
+      { name: "React", icon: "/images/logo-react.svg" },
+      { name: "Next", icon: "/images/logo-nextjs.svg" },
+      { name: "MySQL", icon: "/images/logo-mysql.svg" },
+      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
+    ],
+  },
+  {
+    title: "Acreditación y mejora continua",
+    description: "Sistema de seguimiento y recolección de información para la acreditación y mejora continua de la Universidad de La Frontera",
+    url: "",
+    stack: [
+      { name: "Node", icon: "/images/logo-nodejs.svg" },
+      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
+      { name: "Vue", icon: "/images/logo-vue.svg" },
+      { name: "MySQL", icon: "/images/logo-mysql.svg" },
+      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
+    ],
+  },
+  {
+    title: "Evaluación académica",
+    description: "Sistema de evaluación docente para la Universidad de La Frontera",
+    url: "",
+    stack: [
+      { name: "Node", icon: "/images/logo-nodejs.svg" },
+      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
+      { name: "Vue", icon: "/images/logo-vue.svg" },
+      { name: "MySQL", icon: "/images/logo-mysql.svg" },
+      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
+    ],
+  },
+  {
+    title: "Otakuverse",
+    description: "Sitio web para la comunidad otaku, con foros y publicaciones de anime y manga",
+    url: "",
+    stack: [
+      { name: "Node", icon: "/images/logo-nodejs.svg" },
+      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
+      { name: "React", icon: "/images/logo-react.svg" },
+      { name: "Next", icon: "/images/logo-nextjs.svg" },
+      { name: "PostgreSQL", icon: "/images/logo-postgresql.svg" },
+    ],
+  },
+];
 ---
 
 <html lang="en">
@@ -47,14 +144,14 @@ const jobs = [
     <title>Rodrigo Pardo</title>
   </head>
 
-  <body class="bg-gray-50">
-    <div class="max-w-screen-lg m-auto flex flex-col gap-8">
+  <body class="max-w-screen-lg m-auto bg-gray-50">
+    <main class="flex flex-col gap-8">
       <div class="flex justify-center items-center gap-4 my-20">
         <ProfileAvatar client:load />
-        <div>
+        <div class="flex flex-col gap-4">
           <h1 class="text-6xl">Rodrigo Pardo Gatica</h1>
           <p class="text-xl">
-            Ingeniero de software con más de 3 años de experiencia,
+            <strong>Ingeniero de software</strong> con más de <strong>3 años de experiencia</strong>,
             especializado en desarrollo web y arquitectura de software.
             Apasionado por la calidad del código, el diseño escalable y la
             mejora continua.
@@ -78,17 +175,17 @@ const jobs = [
       <div class="flex flex-col gap-4">
         <h2 class="text-2xl">Proyectos</h2>
         {
-          jobs.map((job) => (
-            <JobCard
+          projects.map((job) => (
+            <ProjectCard
               title={job.title}
-              organization={job.organization}
               description={job.description}
-              startDate={job.start}
-              endDate={job.end}
+              url={job.url}
+              stack={job.stack}
             />
           ))
         }
       </div>
-    </div>
+    </main>
+    <Footer  year={2025}/>
   </body>
 </html>
