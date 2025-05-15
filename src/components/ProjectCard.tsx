@@ -22,14 +22,14 @@ interface Props {
 
 export default function ProjectCard({ title, description, stack, url }: Props) {
   return (
-    <Card className="border bg-background-2 basis-[49%]">
+    <Card className="border bg-background-2 basis-[48%]">
       <CardHeader>
         <CardTitle className="text-white">{title}</CardTitle>
         <CardDescription className="">{description}</CardDescription>
       </CardHeader>
       <CardFooter>
         {
-          <ul className="flex flew-row gap-2 flew-wrap">
+          <ul className="flex gap-2 flex-wrap">
             <TooltipProvider>
               {stack.map((technology) => (
                 <Tooltip key={technology.name}>

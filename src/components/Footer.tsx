@@ -4,6 +4,6 @@ interface Props {
 
 export default function Footer({ year }: Props) {
   return (
-    <footer className="py-8 text-center text-neutral-300">Rodrigo Pardo Gatica © {year}.</footer>
+    <footer className="text-sm py-8 text-center text-neutral-400">© {year} Rodrigo Pardo. All Rights Reserved.</footer>
   )
 }
