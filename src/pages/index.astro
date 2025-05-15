@@ -9,6 +9,7 @@ import LinkedinLogo from "@/components/LinkedinLogo"
 import GithubLogo from "@/components/GithubLogo"
 import GmailLogo from "@/components/GmailLogo"
 import HackerRoom3D from "@/components/HackerRoom3D";
+import DateTag from "@/components/DateTag";
 
 const jobs = [
   {
@@ -213,7 +214,16 @@ const myEmail = 'rodrigo01alexis@gmail.com'
       </section>
       <section class="flex flex-col gap-4 relative" id="formation">
         <h2 class="text-2xl font-semibold underline decoration-primary">Formación</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis, sequi quia eum dolores aliquid quo enim maiores temporibus? Molestias minus ipsum eius ipsam iure voluptate eos id veritatis doloribus?</p>
+        <div class="relative">
+          <p>Titulado de Ingeniería Civil Informática</p>
+          <p class="text-primary text-sm">Universidad de La Frontera</p>
+          <DateTag start="2023" />
+        </div>
+        <div class="relative">
+          <p>Certificado en conceptos básicos de servicios de computación en la nube</p>
+          <p class="text-primary text-sm">Certified Cloud Practitioner AWS</p>
+          <DateTag start="2022" end="2025" />
+        </div>
       </section>
       <section class="flex flex-col gap-4 relative" id="contact">
         <h2 class="text-2xl font-semibold underline decoration-primary">Contacto</h2>
