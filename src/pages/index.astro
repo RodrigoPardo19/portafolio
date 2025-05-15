@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import LinkedinLogo from "@/components/LinkedinLogo"
 import GithubLogo from "@/components/GithubLogo"
 import GmailLogo from "@/components/GmailLogo"
+import HackerRoom3D from "@/components/HackerRoom3D";
 
 const jobs = [
   {
@@ -153,11 +154,13 @@ const myEmail = 'rodrigo01alexis@gmail.com'
   <body class="max-w-screen-sm m-auto bg-background text-white">
     <main class="flex flex-col gap-8">
       <Navbar />
-      <section class="flex flex-col justify-center items-center gap-4 my-20" id="profile">
-        <ProfileAvatar client:load />
-        <div class="flex justify-center items-center flex-col gap-4">
-          <h1 class="text-6xl font-bold">Rodrigo Pardo Gatica</h1>
-          <p class="text-3xl text-center">
+      <section class="flex flex-col gap-4 mt-28">
+        <HackerRoom3D hackerRoomUrl="/assets/models/hacker_room/scene.gltf" client:load />
+      </section>
+      <section class="flex items-center gap-4 my-8" id="profile">
+        <div class="flex flex-col gap-4">
+          <h1 class="text-2xl font-bold">Rodrigo Pardo Gatica</h1>
+          <p class="text-xl">
             <a href="#formation"><strong class="text-white underline decoration-primary">Ingeniero de software</strong></a> con más de <strong class="text-primary">3 años de experiencia</strong>,
             especializado en desarrollo web y arquitectura de software.
             Apasionado por la calidad del código, el diseño escalable y la
@@ -177,6 +180,7 @@ const myEmail = 'rodrigo01alexis@gmail.com'
             </div>
           </div>
         </div>
+        <ProfileAvatar client:load />
       </section>
       <section class="flex flex-col gap-4" id="experience">
         <h2 class="text-2xl font-semibold underline decoration-primary">Experiencia</h2>
