@@ -163,7 +163,7 @@ const myEmail = 'rodrigo01alexis@gmail.com'
           <h1 class="text-2xl font-bold">Rodrigo Pardo Gatica</h1>
           <p class="text-xl">
             <a href="#formation"><strong class="text-white underline decoration-primary">Ingeniero de software</strong></a> con más de <strong class="text-primary">3 años de experiencia</strong>,
-            especializado en desarrollo web y arquitectura de software.
+            especializado en desarrollo web y la arquitectura de software.
             Apasionado por la calidad del código, el diseño escalable y la
             mejora continua.
           </p>
@@ -176,8 +176,12 @@ const myEmail = 'rodrigo01alexis@gmail.com'
               Descarga mi CV
             </a>
             <div class="flex">
-              <LinkedinLogo />
-              <GithubLogo />
+              <a href="https://www.linkedin.com/in/rodrigo-pardo-gatica-07331b218" target="_blank">
+                <LinkedinLogo width={45} height={45} />
+              </a>
+              <a href="https://github.com/RodrigoPardo19" target="_blank">
+                <GithubLogo width={45} height={45} />
+              </a>
             </div>
           </div>
         </div>
@@ -216,18 +220,35 @@ const myEmail = 'rodrigo01alexis@gmail.com'
         <h2 class="text-2xl font-semibold underline decoration-primary">Formación</h2>
         <div class="relative">
           <p>Titulado de Ingeniería Civil Informática</p>
-          <p class="text-primary text-sm">Universidad de La Frontera</p>
+          <a href="" target="_blank" class="text-primary text-sm">Universidad de La Frontera</a>
           <DateTag start="2023" />
         </div>
         <div class="relative">
           <p>Certificado en conceptos básicos de servicios de computación en la nube</p>
-          <p class="text-primary text-sm">Certified Cloud Practitioner AWS</p>
+          <a href="" target="_blank" class="text-primary text-sm">Certified Cloud Practitioner AWS</a>
           <DateTag start="2022" end="2025" />
         </div>
       </section>
       <section class="flex flex-col gap-4 relative" id="contact">
         <h2 class="text-2xl font-semibold underline decoration-primary">Contacto</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis, sequi quia eum dolores aliquid quo enim maiores temporibus? Molestias minus ipsum eius ipsam iure voluptate eos id veritatis doloribus?</p>
+        <ul>
+          <li >
+            <a href="https://www.linkedin.com/in/rodrigo-pardo-gatica-07331b218/" target="_blank">
+              <button type="button" class="flex gap-2 items-center cursor-pointer">
+                <LinkedinLogo width={45} height={45} />
+                <span class="text-white underline decoration-primary text-lg" >@rodrigo-pardo-gatica</span>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/RodrigoPardo19" target="_blank">
+              <button type="button" class="flex gap-2 items-center cursor-pointer">
+                <GithubLogo width={45} height={45} />
+                <span class="text-white underline decoration-primary text-lg">@RodrigoPardo19</span>
+              </button>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <Footer  year={2025}/>
