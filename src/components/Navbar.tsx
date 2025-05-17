@@ -37,8 +37,8 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className="px-4 py-2 fixed left-1/2 -translate-x-1/2 bg-[#20202380] backdrop-blur-md z-50 max-w-screen-sm w-full border-b rounded sm:flex sm:justify-center">
-      <ul className="flex justify-between sm:justify-start sm:gap-2">
+    <nav className="px-4 fixed py-2 sm:py-0 left-1/2 -translate-x-1/2 bg-[#20202380] backdrop-blur-md z-50 max-w-screen-sm w-full border-b rounded sm:flex sm:justify-center">
+      <ul className="flex justify-between items-center sm:justify-start sm:gap-2">
         <li>
           <DevIcon />
         </li>
@@ -56,8 +56,8 @@ export default function Navbar() {
             </DropdownMenu>
           </li>
         ) :
-          menu.map(option => (<a href={`#${option.url}`} key={option.option} className="px-2 hover:underline decoration-primary">
-            <li >{option.option}</li>
+          menu.map(option => (<a href={`#${option.url}`} key={option.option} className="px-2 hover:underline decoration-primary self-center">
+            <li className="sm:py-2">{option.option}</li>
           </a>))
         }
       </ul>
