@@ -10,135 +10,8 @@ import GithubLogo from "@/components/GithubLogo"
 import GmailLogo from "@/components/GmailLogo"
 import HackerRoom3D from "@/components/HackerRoom3D";
 import DateTag from "@/components/DateTag";
-
-const jobs = [
-  {
-    title: "Desarrollador Full Stack",
-    organization: "Ecoprintq Chile",
-    description: [
-      "Responsable del desarrollo del producto principal de la empresa, una aplicación en tiempo real que procesa grandes volúmenes de datos concurrentes. Implementé nuevas funcionalidades y optimizaciones que mejoraron significativamente la eficiencia y calidad del sistema, lo que permitió escalar el producto e impulsar su adopción por parte de clientes corporativos de alto perfil como Falabella, Ricoh LATAM, HP y Agrosuper.",
-      "Se abordaron incidencias críticas de origen desconocido en el producto principal, mediante una estrategia de investigación y pruebas estructuradas. El proceso no solo resolvió los problemas principales, sino que también permitió optimizar otros componentes del sistema, mejorando la estabilidad general del producto.",
-    ],
-    start: "SEP 2024",
-  },
-  {
-    title: "Desarrollador Full Stack",
-    organization: "Acroventus SPA",
-    description: [
-      "Liderazgo del desarrollo full stack de la plataforma soldautos.cl, un sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares. Me encargué del diseño de la arquitectura, coordinación con desarrolladores junior, comunicación directa con el cliente y desarollo de las funcionalidades. El sitio lleva más de 2 años en producción y cuenta con un catálogo activo de más de mil publicaciones.",
-      "Desarrollo de sistema de acreditación y mejora continua para la Universidad de La Frontera, que digitalizó completamente el proceso de recolección de evidencias para la acreditación institucional, reemplazando flujos manuales y acelerando significativamente los tiempos del proceso de acreditación de la universidad.",
-      "Implementación de buenas prácticas en el desarrollo de software, incorporando, arquitecturas limpias, principios SOLID y estrategias de testing. Estas iniciativas permitieron estandarizar metodologías y establecer guías reutilizables que fueron adoptadas por otros equipos y proyectos futuros dentro de la empresa.",
-      "Desarrollo de herramientas internas para optimizar procesos clave de la empresa, como un sistema para digitalizar la toma de requerimientos y una CLI para generar nuevos proyectos con flujos preconfigurados (autenticación, despliegues, integraciones con APIs como WhatsApp y Slack). Estas soluciones, aumentaron la productividad y redujeron tiempos de desarrollo de los nuevos proyectos.",
-    ],
-    start: "NOV 2022",
-    end: "MAY 2024",
-  },
-  {
-    title: "Desarrollador Full stack",
-    organization: "MINEDUC-UFRO",
-    description: [
-      "Desarrollo de un sistema de búsqueda avanzada de convenios para la Universidad de La Frontera, implementando funcionalidades tanto en frontend como backend. La plataforma digitalizó el acceso a convenios nacionales e internacionales, optimizando un proceso que antes se realizaba manualmente. Gracias al impacto del proyecto, la universidad decidió seguir financiando nuevas iniciativas con nuestro equipo de desarrollo.",
-      "Desarrollo y participación en el diseño arquitectónico de SISDAE, un sistema para la gestión de recursos y beneficios estudiantiles de la Universidad de La Frontera. El desempeño en este y otros proyectos despertó el interés de Acroventus, empresa externa encargada de otros desarrollos para la universidad, quienes posteriormente me ofrecieron incorporarme a su equipo de forma indefinida.",
-    ],
-    start: "MAR 2022",
-    end: "OCT 2022",
-  },
-];
-
-const projects = [
-  {
-    title: "Ecoendpoint",
-    description:
-      "Plataforma en tiempo real de monitoreo de impresoras y automatización de tareas",
-    url: "https://admin.ecoendpoint.com/v2rc/#/auth/login",
-    stack: [
-      { name: "Node", icon: "/images/logo-nodejs.svg" },
-      { name: "Express", icon: "/images/logo-express.svg" },
-      { name: "Angular", icon: "/images/logo-angular.svg" },
-      { name: "PostgreSQL", icon: "/images/logo-postgresql.svg" },
-      { name: "GCP", icon: "/images/logo-google-cloud.svg" },
-      { name: "Socket.io", icon: "/images/logo-socket-io.svg" },
-      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
-    ],
-  },
-  {
-    title: "Soldautos",
-    description: "Sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares.",
-    url: "https://www.soldautos.cl",
-    stack: [
-      { name: "Node", icon: "/images/logo-nodejs.svg" },
-      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
-      { name: "Vue", icon: "/images/logo-vue.svg" },
-      { name: "Nuxt", icon: "/images/logo-nuxt.svg" },
-      { name: "AWS", icon: "/images/logo-aws.svg" },
-      { name: "MongoDB", icon: "/images/logo-mongodb.svg" },
-      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
-    ],
-  },
-  {
-    title: "Buscador de convenios",
-    description:
-      "Sistema de búsqueda de convenios nacionales e internacionales de la Universidad de La Frontera",
-    url: "",
-    stack: [
-      { name: "Node", icon: "/images/logo-nodejs.svg" },
-      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
-      { name: "React", icon: "/images/logo-react.svg" },
-      { name: "Next", icon: "/images/logo-nextjs.svg" },
-      { name: "MySQL", icon: "/images/logo-mysql.svg" },
-      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
-    ],
-  },
-  {
-    title: "SISDAE",
-    description: "",
-    url: "",
-    stack: [
-      { name: "Node", icon: "/images/logo-nodejs.svg" },
-      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
-      { name: "React", icon: "/images/logo-react.svg" },
-      { name: "Next", icon: "/images/logo-nextjs.svg" },
-      { name: "MySQL", icon: "/images/logo-mysql.svg" },
-      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
-    ],
-  },
-  {
-    title: "Acreditación y mejora continua",
-    description: "Sistema de seguimiento y recolección de información para la acreditación y mejora continua de la Universidad de La Frontera",
-    url: "",
-    stack: [
-      { name: "Node", icon: "/images/logo-nodejs.svg" },
-      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
-      { name: "Vue", icon: "/images/logo-vue.svg" },
-      { name: "MySQL", icon: "/images/logo-mysql.svg" },
-      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
-    ],
-  },
-  {
-    title: "Evaluación académica",
-    description: "Sistema de evaluación docente para la Universidad de La Frontera",
-    url: "",
-    stack: [
-      { name: "Node", icon: "/images/logo-nodejs.svg" },
-      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
-      { name: "Vue", icon: "/images/logo-vue.svg" },
-      { name: "MySQL", icon: "/images/logo-mysql.svg" },
-      { name: "Tailwind", icon: "/images/logo-tailwindcss.svg" },
-    ],
-  },
-  {
-    title: "Otakuverse",
-    description: "Sitio web para la comunidad otaku, con foros y publicaciones de anime y manga",
-    url: "",
-    stack: [
-      { name: "Node", icon: "/images/logo-nodejs.svg" },
-      { name: "Nest Js", icon: "/images/logo-nestjs.svg" },
-      { name: "React", icon: "/images/logo-react.svg" },
-      { name: "Next", icon: "/images/logo-nextjs.svg" },
-      { name: "PostgreSQL", icon: "/images/logo-postgresql.svg" },
-    ],
-  },
-];
+import jobs from "@/data/jobs.json"
+import projects from "@/data/projects.json"
 
 const myEmail = 'rodrigo01alexis@gmail.com'
 ---
@@ -152,13 +25,13 @@ const myEmail = 'rodrigo01alexis@gmail.com'
     <title>Rodrigo Pardo</title>
   </head>
 
-  <body class="max-w-screen-sm m-auto bg-background text-white">
+  <body class="max-w-screen-sm m-auto bg-background text-white px-4">
     <main class="flex flex-col gap-8">
-      <Navbar />
+      <Navbar client:only />
       <section class="flex flex-col gap-4 mt-28">
         <HackerRoom3D hackerRoomUrl="/assets/models/hacker_room/scene.gltf" client:load />
       </section>
-      <section class="flex items-center gap-4 my-8" id="profile">
+      <section class="flex flex-col md:flex-row items-center gap-4" id="profile">
         <div class="flex flex-col gap-4">
           <h1 class="text-2xl font-bold">Rodrigo Pardo Gatica</h1>
           <p class="text-xl">
@@ -167,7 +40,7 @@ const myEmail = 'rodrigo01alexis@gmail.com'
             Apasionado por la calidad del código, el diseño escalable y la
             mejora continua.
           </p>
-          <div class="flex gap-4 items-center">
+          <div class="flex flex-wrap gap-2 items-center">
             <a href={`mailto:${myEmail}`} class="flex gap-1 b items-center order rounded-lg bg-secondary text-black px-3 h-10 text-center font-semibold cursor-pointer">
               <GmailLogo />
               Contáctame
@@ -202,10 +75,9 @@ const myEmail = 'rodrigo01alexis@gmail.com'
         }
       </section>
       <section class="flex flex-col gap-4 relative" id="projects">
-		    <!-- <div class="absolute top-0 right-1/3 -z-10 h-[20rem] w-[20rem] rounded-full bg-primary blur-[300px]"></div> -->
-		    <div class="absolute bottom-1 left-1/3 -z-10 h-[20rem] w-[20rem] rounded-full bg-primary blur-[300px]"></div>
+		    <div class="absolute bottom-1 md:left-1/3 -z-10 h-[20rem] w-[20rem] rounded-full bg-primary blur-[300px]"></div>
         <h2 class="text-2xl font-semibold underline decoration-primary">Proyectos</h2>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {projects.map((job) => (
             <ProjectCard
               title={job.title}
@@ -219,14 +91,18 @@ const myEmail = 'rodrigo01alexis@gmail.com'
       <section class="flex flex-col gap-4 relative" id="formation">
         <h2 class="text-2xl font-semibold underline decoration-primary">Formación</h2>
         <div class="relative">
-          <p>Titulado de Ingeniería Civil Informática</p>
+          <div class="flex gap-1 flex-wrap">
+            <p>Titulado de Ingeniería Civil Informática</p>
+            <DateTag start="2023" />
+          </div>
           <a href="" target="_blank" class="text-primary text-sm">Universidad de La Frontera</a>
-          <DateTag start="2023" />
         </div>
         <div class="relative">
-          <p>Certificado en conceptos básicos de servicios de computación en la nube</p>
+          <div class="flex gap-1 flex-wrap">
+            <p>Certificado en conceptos básicos de servicios de computación en la nube</p>
+            <DateTag start="2022" end="2025" />
+          </div>
           <a href="" target="_blank" class="text-primary text-sm">Certified Cloud Practitioner AWS</a>
-          <DateTag start="2022" end="2025" />
         </div>
       </section>
       <section class="flex flex-col gap-4 relative" id="contact">
