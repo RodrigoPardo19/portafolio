@@ -10,8 +10,16 @@ import GithubLogo from "@/components/GithubLogo"
 import GmailLogo from "@/components/GmailLogo"
 import HackerRoom3D from "@/components/HackerRoom3D";
 import DateTag from "@/components/DateTag";
-import jobs from "@/data/jobs.json"
-import projects from "@/data/projects.json"
+import jobs from "@/data/jobs.json";
+import projects from "@/data/projects.json";
+import NestJsLogo from "@/components/logos/NestJsLogo";
+import NextJsLogo from "@/components/logos/NextJsLogo";
+import ReactJsLogo from "@/components/logos/ReactJsLogo";
+import NodeJsLogo from "@/components/logos/NodeJsLogo";
+import TypescriptLogo from "@/components/logos/TypescriptLogo";
+import PostgreSqlLogo from "@/components/logos/PostgreSqlLogo";
+import MongoDbLogo from "@/components/logos/MongoDbLogo";
+import GoogleCloudLogo from "@/components/logos/GoogleCloudLogo";
 
 const myEmail = 'rodrigo01alexis@gmail.com'
 ---
@@ -31,34 +39,48 @@ const myEmail = 'rodrigo01alexis@gmail.com'
       <section class="flex flex-col gap-4 mt-28">
         <HackerRoom3D hackerRoomUrl="/assets/models/hacker_room/scene.gltf" client:load />
       </section>
-      <section class="flex flex-col md:flex-row items-center gap-4" id="profile">
-        <div class="flex flex-col gap-4">
-          <h1 class="text-2xl font-bold">Rodrigo Pardo Gatica</h1>
-          <p class="text-xl">
-            <a href="#formation"><strong class="text-white underline decoration-primary">Ingeniero de software</strong></a> con más de <strong class="text-primary">3 años de experiencia</strong>,
-            especializado en desarrollo web y la arquitectura de software.
-            Apasionado por la calidad del código, el diseño escalable y la
-            mejora continua.
-          </p>
-          <div class="flex flex-wrap gap-2 items-center">
-            <a href={`mailto:${myEmail}`} class="flex gap-1 b items-center order rounded-lg bg-secondary text-black px-3 h-10 text-center font-semibold cursor-pointer">
-              <GmailLogo />
-              Contáctame
-            </a>
-            <a href="/cv_rodrigo_pardo_v2_es.pdf" download class="flex gap-1 b items-center order border rounded-lg bg-background text-primary px-3 h-10 text-center font-semibold cursor-pointer">
-              Descarga mi CV
-            </a>
-            <div class="flex">
-              <a href="https://www.linkedin.com/in/rodrigo-pardo-gatica-07331b218" target="_blank">
-                <LinkedinLogo width={45} height={45} />
+      <section id="profile" class="flex flex-col gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <div class="flex flex-col gap-4">
+            <h1 class="text-2xl font-bold">Rodrigo Pardo Gatica</h1>
+            <p class="text-xl">
+              <a href="#formation"><strong class="text-white underline decoration-primary">Ingeniero de software</strong></a> con más de <strong class="text-primary">3 años de experiencia</strong>,
+              especializado en desarrollo web y la arquitectura de software.
+              Apasionado por la calidad del código, el diseño escalable y la
+              mejora continua.
+            </p>
+            <div class="flex flex-wrap gap-2 items-center">
+              <a href={`mailto:${myEmail}`} class="flex gap-1 b items-center order rounded-lg bg-secondary text-black px-3 h-10 text-center font-semibold cursor-pointer">
+                <GmailLogo />
+                Contáctame
               </a>
-              <a href="https://github.com/RodrigoPardo19" target="_blank">
-                <GithubLogo width={45} height={45} />
+              <a href="/cv_rodrigo_pardo_v2_es.pdf" download class="flex gap-1 b items-center order border rounded-lg bg-background text-primary px-3 h-10 text-center font-semibold cursor-pointer">
+                Descarga mi CV
               </a>
+              <div class="flex">
+                <a href="https://www.linkedin.com/in/rodrigo-pardo-gatica-07331b218" target="_blank">
+                  <LinkedinLogo width={45} height={45} />
+                </a>
+                <a href="https://github.com/RodrigoPardo19" target="_blank">
+                  <GithubLogo width={45} height={45} />
+                </a>
+              </div>
             </div>
           </div>
+          <ProfileAvatar client:load />
         </div>
-        <ProfileAvatar client:load />
+        <div>
+          <ul class="flex gap-1 sm:gap-2 items-center flex-wrap justify-center">
+            <TypescriptLogo width={45} height={45} className="text-secondary" />
+            <NodeJsLogo width={45} height={45} className="text-secondary" />
+            <NestJsLogo width={45} height={45} className="text-secondary" />
+            <NextJsLogo width={60} height={60} className="text-secondary" />
+            <ReactJsLogo width={45} height={45} className="text-secondary" />
+            <PostgreSqlLogo width={45} height={45} className="text-secondary" />
+            <MongoDbLogo width={45} height={45} className="text-secondary" />
+          </ul>
+          <div class="w-full border-t border-primary relative my-1"><p class="text-sm px-2 bg-background absolute top-0 left-1/2 -translate-y-3 -translate-x-1/2">Stack</p></div>
+        </div>
       </section>
       <section class="flex flex-col gap-4" id="experience">
         <h2 class="text-2xl font-semibold underline decoration-primary">Experiencia</h2>
