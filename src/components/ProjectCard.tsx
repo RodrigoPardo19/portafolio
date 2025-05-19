@@ -1,8 +1,3 @@
-import NestJsLogo from "./logos/NestJsLogo";
-import NodeJsLogo from "./logos/NodeJsLogo";
-import ReactJsLogo from "./logos/ReactJsLogo";
-import TypescriptLogo from "./logos/TypescriptLogo";
-
 interface Technology {
   name: string;
   icon: string;
@@ -26,19 +21,10 @@ export default function ProjectCard({ title, description, stack, image, url }: P
         </div>
         <p className="">{description}</p>
         <ul className="flex gap-2 items-center">
-          <li>
-            <NestJsLogo width={25} height={25} />
-          </li>
-          <li>
-            <NodeJsLogo width={25} height={25} />
-          </li>
-          <li>
-            <TypescriptLogo width={25} height={25} />
-          </li>
-          <li>
-            <ReactJsLogo width={25} height={25} />
-          </li>
-          {/* {stack.map((technology) => <li><img src={technology.icon} /></li>)} */}
+          {stack.map((technology) =>
+            <li key={technology.name}>
+              <img src={technology.icon} alt={technology.name} width={(technology.name !== 'Next' && technology.name !== 'MySQL') ? 30 : 50} height={(technology.name !== 'Next' && technology.name !== 'MySQL') ? 30 : 50} />
+            </li>)}
         </ul>
       </div>
     </a>

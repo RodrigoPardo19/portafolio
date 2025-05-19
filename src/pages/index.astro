@@ -9,19 +9,22 @@ import LinkedinLogo from "@/components/LinkedinLogo"
 import GithubLogo from "@/components/GithubLogo"
 import GmailLogo from "@/components/GmailLogo"
 import HackerRoom3D from "@/components/HackerRoom3D";
+import Scene3D from "@/components/Scene3D";
 import DateTag from "@/components/DateTag";
 import jobs from "@/data/jobs.json";
 import projects from "@/data/projects.json";
-import NestJsLogo from "@/components/logos/NestJsLogo";
-import NextJsLogo from "@/components/logos/NextJsLogo";
-import ReactJsLogo from "@/components/logos/ReactJsLogo";
-import NodeJsLogo from "@/components/logos/NodeJsLogo";
-import TypescriptLogo from "@/components/logos/TypescriptLogo";
-import PostgreSqlLogo from "@/components/logos/PostgreSqlLogo";
-import MongoDbLogo from "@/components/logos/MongoDbLogo";
-import GoogleCloudLogo from "@/components/logos/GoogleCloudLogo";
 
 const myEmail = 'rodrigo01alexis@gmail.com'
+
+const stack = [
+  { name: 'Typescript', image: '/images/logo-typescript.svg' },
+  { name: 'Node Js', image: '/images/logo-nodejs.svg' },
+  { name: 'Nest Js', image: '/images/logo-nestjs.svg' },
+  { name: 'Next Js', image: '/images/logo-nextjs.svg' },
+  { name: 'React Js', image: '/images/logo-react.svg' },
+  { name: 'PostgreSQL', image: '/images/logo-postgresql.svg' },
+  { name: 'MongoDB', image: '/images/logo-mongodb.svg' },
+]
 ---
 
 <html lang="en">
@@ -37,7 +40,8 @@ const myEmail = 'rodrigo01alexis@gmail.com'
     <main class="flex flex-col gap-8">
       <Navbar client:only />
       <section class="flex flex-col gap-4 mt-28">
-        <HackerRoom3D hackerRoomUrl="/assets/models/hacker_room/scene.gltf" client:load />
+        <Scene3D client:only />
+        <!-- <HackerRoom3D hackerRoomUrl="/assets/models/hacker_room/scene.gltf" client:load /> -->
       </section>
       <section id="profile" class="flex flex-col gap-4">
         <div class="flex flex-col md:flex-row items-center gap-4">
@@ -71,13 +75,7 @@ const myEmail = 'rodrigo01alexis@gmail.com'
         </div>
         <div>
           <ul class="flex gap-1 sm:gap-2 items-center flex-wrap justify-center">
-            <TypescriptLogo width={45} height={45} className="text-secondary" />
-            <NodeJsLogo width={45} height={45} className="text-secondary" />
-            <NestJsLogo width={45} height={45} className="text-secondary" />
-            <NextJsLogo width={60} height={60} className="text-secondary" />
-            <ReactJsLogo width={45} height={45} className="text-secondary" />
-            <PostgreSqlLogo width={45} height={45} className="text-secondary" />
-            <MongoDbLogo width={45} height={45} className="text-secondary" />
+            {stack.map((technology) => <li><img src={technology.image} alt={technology.name} width={45} height={45} /></li>)}
           </ul>
           <div class="w-full border-t border-primary relative my-1"><p class="text-sm px-2 bg-background absolute top-0 left-1/2 -translate-y-3 -translate-x-1/2">Stack</p></div>
         </div>
