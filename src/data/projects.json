@@ -2,6 +2,7 @@
    {
       "title":"Ecoendpoint",
       "description":"Plataforma en tiempo real de monitoreo de impresoras y automatización de tareas",
+      "image": "/images/ecoprintq_bg.png",
       "url":"https://admin.ecoendpoint.com/v2rc/#/auth/login",
       "stack":[
          {
@@ -37,7 +38,8 @@
    {
       "title":"Soldautos",
       "description":"Sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares.",
-      "url":"https://www.soldautos.cl",
+      "image": "/images/soldautos.jpg",
+      "url":"https://soldautos.cl/",
       "stack":[
          {
             "name":"Node",
@@ -72,6 +74,7 @@
    {
       "title":"Buscador de convenios",
       "description":"Sistema de búsqueda de convenios nacionales e internacionales de la Universidad de La Frontera",
+      "image": "/images/ufro.png",
       "url":"",
       "stack":[
          {
@@ -103,6 +106,7 @@
    {
       "title":"SISDAE",
       "description":"",
+      "image": "/images/ufro.png",
       "url":"",
       "stack":[
          {
@@ -134,6 +138,7 @@
    {
       "title":"Acreditación y mejora continua",
       "description":"Sistema de seguimiento y recolección de información para la acreditación y mejora continua de la Universidad de La Frontera",
+      "image": "/images/ufro.png",
       "url":"",
       "stack":[
          {
@@ -161,6 +166,7 @@
    {
       "title":"Evaluación académica",
       "description":"Sistema de evaluación docente para la Universidad de La Frontera",
+      "image": "/images/ufro.png",
       "url":"",
       "stack":[
          {
@@ -188,7 +194,36 @@
    {
       "title":"Otakuverse",
       "description":"Sitio web para la comunidad otaku, con foros y publicaciones de anime y manga",
+      "image": "/images/otakuverse_1.jpeg",
       "url":"",
+      "stack":[
+         {
+            "name":"Node",
+            "icon":"/images/logo-nodejs.svg"
+         },
+         {
+            "name":"Nest Js",
+            "icon":"/images/logo-nestjs.svg"
+         },
+         {
+            "name":"React",
+            "icon":"/images/logo-react.svg"
+         },
+         {
+            "name":"Next",
+            "icon":"/images/logo-nextjs.svg"
+         },
+         {
+            "name":"PostgreSQL",
+            "icon":"/images/logo-postgresql.svg"
+         }
+      ]
+   },
+   {
+      "title": "Ecosuelolab",
+      "description":"Aplicación que permite monitorear y gestionar datos agrícolas de varios clientes, facilitando el acceso y análisis centralizado de información clave sobre potreros y sectores, con un enfoque en eficiencia y facilidad de uso.",
+      "image": "/images/ecosuelolab.png",
+      "url": "https://play.google.com/store/apps/details?id=cl.ecosuelolab.mobile&hl=es_CL",
       "stack":[
          {
             "name":"Node",

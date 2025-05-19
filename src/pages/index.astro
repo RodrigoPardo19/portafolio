@@ -104,6 +104,7 @@ const myEmail = 'rodrigo01alexis@gmail.com'
             <ProjectCard
               title={job.title}
               description={job.description}
+              image={job.image}
               url={job.url}
               stack={job.stack}
             />
@@ -130,7 +131,7 @@ const myEmail = 'rodrigo01alexis@gmail.com'
       <section class="flex flex-col gap-4 relative" id="contact">
         <h2 class="text-2xl font-semibold underline decoration-primary">Contacto</h2>
         <ul>
-          <li >
+          <li>
             <a href="https://www.linkedin.com/in/rodrigo-pardo-gatica-07331b218/" target="_blank">
               <button type="button" class="flex gap-2 items-center cursor-pointer">
                 <LinkedinLogo width={45} height={45} />

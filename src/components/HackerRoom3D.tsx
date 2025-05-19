@@ -14,7 +14,6 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
   useEffect(() => {
     if (!mountRef.current) return;
 
-    // Scene & Camera
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x1f1f22);
     const camera = new THREE.PerspectiveCamera(
@@ -23,19 +22,16 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
       0.1,
       2000
     );
-    camera.position.set(0, 50, 60);
+    camera.position.set(0, 40, 70);
 
-    // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
     mountRef.current.appendChild(renderer.domElement);
 
-    // Controls
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.target.set(0, 1, 0);
     controls.enableDamping = true;
 
-    // Lights
     const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1);
     hemiLight.position.set(0, 20, 0);
     scene.add(hemiLight);
@@ -43,12 +39,10 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
     dirLight.position.set(-5, 10, -5);
     scene.add(dirLight);
 
-    // Loaders & Mixers
     const loader = new GLTFLoader();
     const mixers: THREE.AnimationMixer[] = [];
     const clock = new THREE.Clock();
 
-    // Helper to load a model
     function loadModel(url: string, scale: number, position: THREE.Vector3, rotationY = 0) {
       loader.load(
         url,
@@ -71,18 +65,14 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
       );
     }
 
-    // Load the three models
     loadModel(hackerRoomUrl, 0.34, new THREE.Vector3(0, -10, 0.5), Math.PI);
 
-    // Floor
     const floorGeo = new THREE.PlaneGeometry(20, 20);
     const floorMat = new THREE.MeshStandardMaterial({ color: 0x202023 });
     const floor = new THREE.Mesh(floorGeo, floorMat);
     floor.rotation.x = -Math.PI / 2;
     floor.position.y = -0.01;
-    // scene.add(floor);
 
-    // Animation loop
     const animate = () => {
       const delta = clock.getDelta();
       mixers.forEach(mixer => mixer.update(delta));
@@ -96,7 +86,6 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
 
     animate();
 
-    // Handle resize
     const handleResize = () => {
       if (!mountRef.current) return;
       camera.aspect = mountRef.current.clientWidth / mountRef.current.clientHeight;
@@ -105,7 +94,6 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
     };
     window.addEventListener('resize', handleResize);
 
-    // Cleanup
     return () => {
       window.removeEventListener('resize', handleResize);
       mountRef.current?.removeChild(renderer.domElement);
