@@ -9,6 +9,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
   integrations: [react()],
+  site: 'https://RodrigoPardo19.github.io',
+  base: '/portafolio'
 });

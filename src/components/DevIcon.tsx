@@ -1,6 +1,6 @@
 export default function DevIcon() {
   return (
-    <a href="/#">
+    <a href="/portafolio/#">
       <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 128 128">
         <path
           fill="#81e6d9"

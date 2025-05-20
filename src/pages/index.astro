@@ -1,5 +1,4 @@
 ---
-import { OGImageRoute } from "astro-og-canvas";
 import ProfileAvatar from "@/components/Avatar";
 import JobCard from "@/components/JobCard";
 import ProjectCard from "@/components/ProjectCard";
@@ -14,31 +13,14 @@ import DefaultLayout from "@/layouts/DefaultLayout.astro";
 const myEmail = "rodrigo01alexis@gmail.com";
 
 const stack = [
-  { name: "Typescript", image: "/images/logo-typescript.svg" },
-  { name: "Node Js", image: "/images/logo-nodejs.svg" },
-  { name: "Nest Js", image: "/images/logo-nestjs.svg" },
-  { name: "Next Js", image: "/images/logo-nextjs.svg" },
-  { name: "React Js", image: "/images/logo-react.svg" },
-  { name: "PostgreSQL", image: "/images/logo-postgresql.svg" },
-  { name: "MongoDB", image: "/images/logo-mongodb.svg" },
+  { name: "Typescript", image: "/portafolio/images/logo-typescript.svg" },
+  { name: "Node Js", image: "/portafolio/images/logo-nodejs.svg" },
+  { name: "Nest Js", image: "/portafolio/images/logo-nestjs.svg" },
+  { name: "Next Js", image: "/portafolio/images/logo-nextjs.svg" },
+  { name: "React Js", image: "/portafolio/images/logo-react.svg" },
+  { name: "PostgreSQL", image: "/portafolio/images/logo-postgresql.svg" },
+  { name: "MongoDB", image: "/portafolio/images/logo-mongodb.svg" },
 ];
-
-export const { getStaticPaths, GET } = OGImageRoute({
-  param: "route",
-  pages: {
-    example: {
-      title: "Example Page",
-      description: "Description of this page shown in smaller text",
-    },
-  },
-  getImageOptions: (path, page) => ({
-    title: page.title,
-    description: page.description,
-    logo: {
-      path: "/images/profile.jpeg",
-    },
-  }),
-});
 ---
 
 <DefaultLayout>
@@ -48,7 +30,7 @@ export const { getStaticPaths, GET } = OGImageRoute({
         <div class="flex flex-col gap-4">
           <h1 class="text-4xl font-bold">Rodrigo Pardo Gatica</h1>
           <p class="text-xl">
-            <a href="#formation">
+            <a href="/portafolio/#formation">
               <strong class="text-white underline decoration-primary">Ingeniero de software</strong>
             </a> con más de <strong class="text-primary">3 años de experiencia</strong>,
             especializado en desarrollo web y la arquitectura de software. Apasionado por la calidad
@@ -63,7 +45,7 @@ export const { getStaticPaths, GET } = OGImageRoute({
               Contáctame
             </a>
             <a
-              href="/cv_rodrigo_pardo_v2_es.pdf"
+              href="/portafolio/cv_rodrigo_pardo_v3_es.pdf"
               download
               class="flex gap-1 b items-center order border rounded-lg bg-background text-primary px-3 h-10 text-center font-semibold cursor-pointer"
             >
@@ -141,7 +123,9 @@ export const { getStaticPaths, GET } = OGImageRoute({
           <p>Titulado de Ingeniería Civil Informática</p>
           <DateTag start="2023" />
         </div>
-        <a href="" target="_blank" class="text-primary text-sm">Universidad de La Frontera</a>
+        <a href="https://www.ufro.cl/" target="_blank" class="text-primary text-sm">
+          Universidad de La Frontera
+        </a>
       </div>
       <div class="relative">
         <div class="flex gap-1 flex-wrap">

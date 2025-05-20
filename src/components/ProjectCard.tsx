@@ -15,7 +15,7 @@ interface Props {
 
 export default function ProjectCard({ title, summary, stack, image, sideProject }: Props) {
   return (
-    <a href={`/projects/${title}`}>
+    <a href={`/portafolio/projects/${title}`}>
       <div className="flex flex-col gap-1">
         <img src={image} alt="soldautos-project" className="rounded-xl object-cover border h-40" />
         <div className="flex flex-col">

@@ -57,7 +57,7 @@ export default function Navbar() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-background text-white">
                 {menu.map((option) => (
-                  <a href={`/#${option.url}`} key={option.option}>
+                  <a href={`/portafolio/#${option.url}`} key={option.option}>
                     <DropdownMenuItem>{option.option}</DropdownMenuItem>
                   </a>
                 ))}
@@ -67,7 +67,7 @@ export default function Navbar() {
         ) : (
           menu.map((option) => (
             <a
-              href={`/#${option.url}`}
+              href={`/portafolio/#${option.url}`}
               key={option.option}
               className="px-2 hover:underline decoration-primary self-center"
             >

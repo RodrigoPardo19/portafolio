@@ -3,7 +3,7 @@
     "title": "Ecoendpoint",
     "summary": "Plataforma en tiempo real de monitoreo de impresoras y automatización de tareas.",
     "description": "En EcoEndpoint desarrollamos un sistema SaaS de automatización de procesos en tiempo real, originalmente enfocado en el monitoreo de impresoras. La plataforma tiene la capacidad de conectarse a miles de máquinas de un cliente específico, permitiendo programar tareas automatizadas, generar reportes a partir de los datos recolectados, enviar notificaciones, detectar problemas en tiempo real y gestionar programación de tareas de manera centralizada.",
-    "image": "/images/ecoprintq_bg.png",
+    "image": "/portafolio/images/ecoprintq_bg.png",
     "url": null,
     "company": {
       "name": "EcoprintQ",
@@ -12,31 +12,31 @@
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Express",
-        "icon": "/images/logo-express.svg"
+        "icon": "/portafolio/images/logo-express.svg"
       },
       {
         "name": "Angular",
-        "icon": "/images/logo-angular.svg"
+        "icon": "/portafolio/images/logo-angular.svg"
       },
       {
         "name": "PostgreSQL",
-        "icon": "/images/logo-postgresql.svg"
+        "icon": "/portafolio/images/logo-postgresql.svg"
       },
       {
         "name": "GCP",
-        "icon": "/images/logo-gcp.svg"
+        "icon": "/portafolio/images/logo-gcp.svg"
       },
       {
         "name": "Socket.io",
-        "icon": "/images/logo-socket-io.svg"
+        "icon": "/portafolio/images/logo-socket-io.svg"
       },
       {
         "name": "Tailwind",
-        "icon": "/images/logo-tailwindcss.svg"
+        "icon": "/portafolio/images/logo-tailwindcss.svg"
       }
     ]
   },
@@ -44,7 +44,7 @@
     "title": "Soldautos",
     "summary": "Sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares.",
     "description": ["Soldautos es un marketplace para la compra y venta de vehículos nuevos y usados, diseñado tanto para particulares como para automotoras.", "Nuestra plataforma permite a las automotoras contar con una presencia online personalizada, mediante un backoffice donde pueden gestionar su catálogo de vehículos, crear su propia página dentro de Soldautos, registrar sucursales, vendedores y más.", "Los usuarios pueden acceder fácilmente a los catálogos disponibles, comparar opciones y contactar a los vendedores a través del sitio, ya sea por correo electrónico o WhatsApp.", "Además, los particulares también pueden publicar sus vehículos para la venta de forma simple y rápida.", "Actualmente, Soldautos cuenta con más de mil vehículos publicados y sigue creciendo día a día."],
-    "image": "/images/soldautos.jpg",
+    "image": "/portafolio/images/soldautos.jpg",
     "url": "https://soldautos.cl/",
     "company": {
       "name": "Soldautos",
@@ -53,31 +53,31 @@
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Nest Js",
-        "icon": "/images/logo-nestjs.svg"
+        "icon": "/portafolio/images/logo-nestjs.svg"
       },
       {
         "name": "Vue",
-        "icon": "/images/logo-vue.svg"
+        "icon": "/portafolio/images/logo-vue.svg"
       },
       {
         "name": "Nuxt",
-        "icon": "/images/logo-nuxt.svg"
+        "icon": "/portafolio/images/logo-nuxt.svg"
       },
       {
         "name": "AWS",
-        "icon": "/images/logo-aws.svg"
+        "icon": "/portafolio/images/logo-aws.svg"
       },
       {
         "name": "MongoDB",
-        "icon": "/images/logo-mongodb.svg"
+        "icon": "/portafolio/images/logo-mongodb.svg"
       },
       {
         "name": "Tailwind",
-        "icon": "/images/logo-tailwindcss.svg"
+        "icon": "/portafolio/images/logo-tailwindcss.svg"
       }
     ]
   },
@@ -85,7 +85,7 @@
     "title": "Ecosuelolab",
     "summary": "Plafaforma que permite monitorear y gestionar datos agrícolas de varios clientes, facilitando el acceso y análisis centralizado de información clave sobre potreros y sectores, con un enfoque en eficiencia y facilidad de uso.",
     "description": ["Tanto la aplicación como el sitio web ofrecen una solución integral para monitorear y gestionar datos agrícolas específicos de múltiples clientes asociados. Con un enfoque centrado en la eficiencia y la facilidad de uso, la plataforma permite a los usuarios acceder y analizar información vital sobre sus potreros y sectores agrícolas de manera intuitiva y centralizada.", "Los usuarios pueden realizar un seguimiento detallado de diversas métricas agrícolas, desde el nivel de mineral del suelo hasta el porcentaje de humedad o nivel de nitrógeno, proporcionando una visión completa de la salud y el rendimiento de sus terrenos."],
-    "image": "/images/ecosuelolab.png",
+    "image": "/portafolio/images/ecosuelolab.png",
     "company": {
       "name": "Ecosuelolab",
       "url": "https://www.ecosuelolab.com/"
@@ -94,27 +94,27 @@
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Nest Js",
-        "icon": "/images/logo-nestjs.svg"
+        "icon": "/portafolio/images/logo-nestjs.svg"
       },
       {
         "name": "Flutter",
-        "icon": "/images/logo-flutter.svg"
+        "icon": "/portafolio/images/logo-flutter.svg"
       },
       {
         "name": "React",
-        "icon": "/images/logo-react.svg"
+        "icon": "/portafolio/images/logo-react.svg"
       },
       {
         "name": "Next",
-        "icon": "/images/logo-nextjs.svg"
+        "icon": "/portafolio/images/logo-nextjs.svg"
       },
       {
         "name": "PostgreSQL",
-        "icon": "/images/logo-postgresql.svg"
+        "icon": "/portafolio/images/logo-postgresql.svg"
       }
     ]
   },
@@ -122,7 +122,7 @@
     "title": "Buscador de convenios",
     "summary": "Sistema de búsqueda de convenios nacionales e internacionales de la Universidad de La Frontera.",
     "description": "Sistema de búsqueda avanzada de convenios desarrollado para la Universidad de La Frontera, que permite digitalizar y agilizar el acceso a convenios nacionales e internacionales. Esta solución optimiza un proceso que anteriormente se realizaba de forma manual, mejorando significativamente la eficiencia y accesibilidad de la información.",
-    "image": "/images/ufro.png",
+    "image": "/portafolio/images/ufro.png",
     "company": {
       "name": "Universidad de La Frontera",
       "url": "https://www.ufro.cl/"
@@ -131,27 +131,27 @@
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Nest Js",
-        "icon": "/images/logo-nestjs.svg"
+        "icon": "/portafolio/images/logo-nestjs.svg"
       },
       {
         "name": "React",
-        "icon": "/images/logo-react.svg"
+        "icon": "/portafolio/images/logo-react.svg"
       },
       {
         "name": "Next",
-        "icon": "/images/logo-nextjs.svg"
+        "icon": "/portafolio/images/logo-nextjs.svg"
       },
       {
         "name": "MySQL",
-        "icon": "/images/logo-mysql.svg"
+        "icon": "/portafolio/images/logo-mysql.svg"
       },
       {
         "name": "Tailwind",
-        "icon": "/images/logo-tailwindcss.svg"
+        "icon": "/portafolio/images/logo-tailwindcss.svg"
       }
     ]
   },
@@ -159,7 +159,7 @@
     "title": "SISDAE",
     "summary": "Sistema para la gestión de recursos y beneficios estudiantiles de la Universidad de La Frontera.",
     "description": "Sistema desarrollado para la Universidad de La Frontera, orientado a la gestión de recursos y beneficios estudiantiles, como becas, pasantías, entre otros. La plataforma centraliza y agiliza estos procesos, facilitando el acceso y administración tanto para los estudiantes como para el personal encargado.",
-    "image": "/images/ufro.png",
+    "image": "/portafolio/images/ufro.png",
     "company": {
       "name": "Universidad de La Frontera",
       "url": "https://www.ufro.cl/"
@@ -168,27 +168,27 @@
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Nest Js",
-        "icon": "/images/logo-nestjs.svg"
+        "icon": "/portafolio/images/logo-nestjs.svg"
       },
       {
         "name": "React",
-        "icon": "/images/logo-react.svg"
+        "icon": "/portafolio/images/logo-react.svg"
       },
       {
         "name": "Next",
-        "icon": "/images/logo-nextjs.svg"
+        "icon": "/portafolio/images/logo-nextjs.svg"
       },
       {
         "name": "MySQL",
-        "icon": "/images/logo-mysql.svg"
+        "icon": "/portafolio/images/logo-mysql.svg"
       },
       {
         "name": "Tailwind",
-        "icon": "/images/logo-tailwindcss.svg"
+        "icon": "/portafolio/images/logo-tailwindcss.svg"
       }
     ]
   },
@@ -196,7 +196,7 @@
     "title": "Acreditación y mejora continua",
     "summary": "Sistema de seguimiento y recolección de información para la acreditación y mejora continua de la Universidad de La Frontera.",
     "description": "Este sistema permite a la universidad digitalizar una serie de procesos clave para iniciar y optimizar su proceso de acreditación. Facilita la recolección de evidencias, la gestión de vistos buenos por parte de distintos departamentos y responsables, el envío de notificaciones, y el seguimiento de las distintas etapas del proceso. Además, permite la carga de archivos necesarios para respaldar y facilitar la aprobación de cada instancia.",
-    "image": "/images/ufro.png",
+    "image": "/portafolio/images/ufro.png",
     "company": {
       "name": "Universidad de La Frontera",
       "url": "https://www.ufro.cl/"
@@ -205,23 +205,23 @@
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Nest Js",
-        "icon": "/images/logo-nestjs.svg"
+        "icon": "/portafolio/images/logo-nestjs.svg"
       },
       {
         "name": "Vue",
-        "icon": "/images/logo-vue.svg"
+        "icon": "/portafolio/images/logo-vue.svg"
       },
       {
         "name": "MySQL",
-        "icon": "/images/logo-mysql.svg"
+        "icon": "/portafolio/images/logo-mysql.svg"
       },
       {
         "name": "Tailwind",
-        "icon": "/images/logo-tailwindcss.svg"
+        "icon": "/portafolio/images/logo-tailwindcss.svg"
       }
     ]
   },
@@ -229,7 +229,7 @@
     "title": "Evaluación académica",
     "summary": "Sistema de evaluación docente para la Universidad de La Frontera.",
     "description": "Sistema de evaluación académica docente, permite a la universidad analizar el desempeño de su planta académica y establecer procesos de mejora continua en la calidad docente.",
-    "image": "/images/ufro.png",
+    "image": "/portafolio/images/ufro.png",
     "company": {
       "name": "Universidad de La Frontera",
       "url": "https://www.ufro.cl/"
@@ -238,23 +238,23 @@
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Nest Js",
-        "icon": "/images/logo-nestjs.svg"
+        "icon": "/portafolio/images/logo-nestjs.svg"
       },
       {
         "name": "Vue",
-        "icon": "/images/logo-vue.svg"
+        "icon": "/portafolio/images/logo-vue.svg"
       },
       {
         "name": "MySQL",
-        "icon": "/images/logo-mysql.svg"
+        "icon": "/portafolio/images/logo-mysql.svg"
       },
       {
         "name": "Tailwind",
-        "icon": "/images/logo-tailwindcss.svg"
+        "icon": "/portafolio/images/logo-tailwindcss.svg"
       }
     ]
   },
@@ -262,30 +262,30 @@
     "title": "Otakuverse",
     "summary": "Sitio web para la comunidad otaku, con foros y publicaciones de anime y manga.",
     "description": "Red social enfocada en el mundo del anime y el manga, que permite a los usuarios comentar sus títulos favoritos, crear listas de visualización, elaborar rankings y escribir críticas. Además, ofrece acceso a las últimas noticias, foros de discusión, galerías de arte y más, todo dentro de una plataforma diseñada con énfasis en la usabilidad y una experiencia de usuario fluida.",
-    "image": "/images/otakuverse_1.jpeg",
+    "image": "/portafolio/images/otakuverse_1.jpeg",
     "sideProject": true,
     "repo": "https://github.com/RodrigoPardo19/otakuverse",
     "url": "pronto...",
     "stack": [
       {
         "name": "Node",
-        "icon": "/images/logo-nodejs.svg"
+        "icon": "/portafolio/images/logo-nodejs.svg"
       },
       {
         "name": "Nest Js",
-        "icon": "/images/logo-nestjs.svg"
+        "icon": "/portafolio/images/logo-nestjs.svg"
       },
       {
         "name": "React",
-        "icon": "/images/logo-react.svg"
+        "icon": "/portafolio/images/logo-react.svg"
       },
       {
         "name": "Next",
-        "icon": "/images/logo-nextjs.svg"
+        "icon": "/portafolio/images/logo-nextjs.svg"
       },
       {
         "name": "PostgreSQL",
-        "icon": "/images/logo-postgresql.svg"
+        "icon": "/portafolio/images/logo-postgresql.svg"
       }
     ]
   }
