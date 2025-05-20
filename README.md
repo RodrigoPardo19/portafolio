@@ -15,10 +15,10 @@ For complete setup instructions, please see our [Tailwind Integration Guide](htt
 # TODO
 
 - [x] Add Layout and page transitions
-- [ ] Add a project page
+- [x] Add a project page
+- [ ] Crear página de not found
 - [ ] Add final CV
 - [ ] Agregar algunas animaciones
 - [ ] Agregar Open Graph
 - [ ] Add English versión
 - [ ] Add light mode
-- [ ] Crear página de not found

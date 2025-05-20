@@ -23,9 +23,20 @@ const currentProject = projects.find((p) => p.title === project);
 
 <DefaultLayout>
   <main class="flex flex-col gap-8">
-    <Breadcrumbs paths={paths} currentPath={project} />
+    <div class="flex items-center">
+      <Breadcrumbs paths={paths} currentPath={project} />
+      {currentProject?.sideProject ? <Badge title="sideproject" /> : null}
+    </div>
     <section id="description">
-      <p class="indent-3">{currentProject?.description}</p>
+      {
+        Array.isArray(currentProject?.description) ? (
+          currentProject.description.map((d) => (
+            <p class="indent-3 text-justify hyphens-auto">{d}</p>
+          ))
+        ) : (
+          <p class="indent-3 text-justify hyphens-auto">{currentProject?.description}</p>
+        )
+      }
     </section>
     <section id="tags">
       <p>
@@ -44,15 +55,31 @@ const currentProject = projects.find((p) => p.title === project);
               {currentProject?.url}
             </a>
           ) : (
-            "Este es un proyecto privado y no se puede compartir una url :c"
+            "Proyecto privado (URL no disponible por confidencialidad)"
           )
         }
       </p>
+      {
+        currentProject?.company ? (
+          <p>
+            <Badge title="Company" />
+            <a href={currentProject?.company.url} target="_blank" class="text-primary">
+              {currentProject?.company.name}
+            </a>
+          </p>
+        ) : null
+      }
       <p>
-        <Badge title="Company" />
-        <a href={currentProject?.company.url} target="_blank" class="text-primary">
-          {currentProject?.company.name}
-        </a>
+        {
+          currentProject?.sideProject ? (
+            <p>
+              <Badge title="Github" />
+              <a href={currentProject?.repo} target="_blank" class="text-primary">
+                {currentProject?.repo}
+              </a>
+            </p>
+          ) : null
+        }
       </p>
     </section>
   </main>

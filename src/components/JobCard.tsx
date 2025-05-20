@@ -1,5 +1,5 @@
 import DateTag from "./DateTag";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { CardDescription, CardTitle } from "./ui/card";
 
 interface Props {
   title: string;

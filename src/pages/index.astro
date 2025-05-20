@@ -107,9 +107,9 @@ const stack = [
           projects.map((job) => (
             <ProjectCard
               title={job.title}
-              description={job.description}
+              summary={job.summary}
               image={job.image}
-              url={job.url}
+              sideProject={job.sideProject}
               stack={job.stack}
             />
           ))

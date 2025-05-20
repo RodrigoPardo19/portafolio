@@ -1,3 +1,5 @@
+import Badge from "./Badge";
+
 interface Technology {
   name: string;
   icon: string;
@@ -5,21 +7,21 @@ interface Technology {
 
 interface Props {
   title: string;
-  description: string;
+  summary: string;
   stack: Technology[];
   image: string;
-  url?: string;
+  sideProject?: boolean;
 }
 
-export default function ProjectCard({ title, description, stack, image, url }: Props) {
+export default function ProjectCard({ title, summary, stack, image, sideProject }: Props) {
   return (
     <a href={`/projects/${title}`}>
       <div className="flex flex-col gap-1">
         <img src={image} alt="soldautos-project" className="rounded-xl object-cover border h-40" />
         <div className="flex flex-col">
-          <p className="text-primary font-semibold">{title}</p>
+          <p className="text-primary font-semibold">{title} {sideProject ? <Badge title="sideproject" /> : ''}</p>
         </div>
-        <p className="">{description}</p>
+        <p className="">{summary}</p>
         <ul className="flex gap-2 items-center">
           {stack.map((technology) => (
             <li key={technology.name}>
