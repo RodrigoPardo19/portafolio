@@ -13,7 +13,7 @@ interface Props {
 
 export default function ProjectCard({ title, description, stack, image, url }: Props) {
   return (
-    <a href={url} target="_blank">
+    <a href={`/projects/${title}`}>
       <div className="flex flex-col gap-1">
         <img src={image} alt="soldautos-project" className="rounded-xl object-cover border h-40" />
         <div className="flex flex-col">

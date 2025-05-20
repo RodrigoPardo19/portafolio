@@ -1,0 +1,19 @@
+---
+import type { GetStaticPaths } from "astro";
+import projects from "@/data/projects.json"
+import DefaultLayout from "@/layouts/DefaultLayout.astro";
+
+export const getStaticPaths = (() => {
+  return projects.map((project) => {
+    return { params: { project: project.title }}
+  })
+}) satisfies GetStaticPaths;
+
+const { project } = Astro.params
+---
+
+<DefaultLayout>
+  <main>
+    <h1>{project}</h1>
+  </main>
+</DefaultLayout>

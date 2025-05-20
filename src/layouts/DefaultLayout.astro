@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import Navbar from "@/components/Navbar";
+import Scene3D from "@/components/Scene3D";
+import Footer from "@/components/Footer";
+import { ClientRouter } from "astro:transitions";
+
+const year = new Date().getFullYear()
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Rodrigo Pardo</title>
+    <ClientRouter />
+  </head>
+
+  <body class="max-w-screen-sm m-auto bg-background text-white px-4">
+    <header>
+      <Navbar client:only />
+      <div class="pt-28">
+        <Scene3D client:only />
+      </div>
+    </header>
+    <slot />
+    <Footer year={year} />
+  </body>
+</html>

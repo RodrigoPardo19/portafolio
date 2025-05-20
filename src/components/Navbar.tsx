@@ -49,14 +49,14 @@ export default function Navbar() {
                 <BurgerIcon />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-background text-white">
-                {menu.map(option => (<a href={`#${option.url}`} key={option.option}>
+                {menu.map(option => (<a href={`/#${option.url}`} key={option.option}>
                   <DropdownMenuItem >{option.option}</DropdownMenuItem>
                 </a>))}
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
         ) :
-          menu.map(option => (<a href={`#${option.url}`} key={option.option} className="px-2 hover:underline decoration-primary self-center">
+          menu.map(option => (<a href={`/#${option.url}`} key={option.option} className="px-2 hover:underline decoration-primary self-center">
             <li className="sm:py-2">{option.option}</li>
           </a>))
         }
