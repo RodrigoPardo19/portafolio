@@ -7,6 +7,14 @@ import Footer from "@/components/Footer";
 import { ClientRouter } from "astro:transitions";
 
 const year = new Date().getFullYear();
+
+const SITE_METADATA = {
+  title: "Rodrigo Pardo",
+  description:
+    "Ingeniero de software con más de 3 años de experiencia, especializado en desarrollo web y la arquitectura de software. Apasionado por la calidad del código, el diseño escalable y la mejora continua.",
+  url: "https://github.com/RodrigoPardo19/portafolio",
+  image: `http://localhost:4321/images/open-graph.jpg`,
+};
 ---
 
 <html lang="es">
@@ -15,6 +23,21 @@ const year = new Date().getFullYear();
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={SITE_METADATA.description} />
+    <meta property="og:title" content={SITE_METADATA.title} />
+    <meta property="og:description" content={SITE_METADATA.description} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content={SITE_METADATA.image} />
+    <meta property="og:url" content={SITE_METADATA.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={SITE_METADATA.title} />
+    <meta name="twitter:description" content={SITE_METADATA.description} />
+    <meta name="twitter:image:type" content="image/jpeg" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <meta name="twitter:image" content={SITE_METADATA.image} />
     <title>Rodrigo Pardo</title>
     <ClientRouter />
   </head>
