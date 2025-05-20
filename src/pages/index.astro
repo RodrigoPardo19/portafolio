@@ -2,45 +2,53 @@
 import ProfileAvatar from "@/components/Avatar";
 import JobCard from "@/components/JobCard";
 import ProjectCard from "@/components/ProjectCard";
-import LinkedinLogo from "@/components/LinkedinLogo"
-import GithubLogo from "@/components/GithubLogo"
-import GmailLogo from "@/components/GmailLogo"
-import Scene3D from "@/components/Scene3D";
+import LinkedinLogo from "@/components/LinkedinLogo";
+import GithubLogo from "@/components/GithubLogo";
+import GmailLogo from "@/components/GmailLogo";
 import DateTag from "@/components/DateTag";
 import jobs from "@/data/jobs.json";
 import projects from "@/data/projects.json";
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
 
-const myEmail = 'rodrigo01alexis@gmail.com'
+const myEmail = "rodrigo01alexis@gmail.com";
 
 const stack = [
-  { name: 'Typescript', image: '/images/logo-typescript.svg' },
-  { name: 'Node Js', image: '/images/logo-nodejs.svg' },
-  { name: 'Nest Js', image: '/images/logo-nestjs.svg' },
-  { name: 'Next Js', image: '/images/logo-nextjs.svg' },
-  { name: 'React Js', image: '/images/logo-react.svg' },
-  { name: 'PostgreSQL', image: '/images/logo-postgresql.svg' },
-  { name: 'MongoDB', image: '/images/logo-mongodb.svg' },
-]
+  { name: "Typescript", image: "/images/logo-typescript.svg" },
+  { name: "Node Js", image: "/images/logo-nodejs.svg" },
+  { name: "Nest Js", image: "/images/logo-nestjs.svg" },
+  { name: "Next Js", image: "/images/logo-nextjs.svg" },
+  { name: "React Js", image: "/images/logo-react.svg" },
+  { name: "PostgreSQL", image: "/images/logo-postgresql.svg" },
+  { name: "MongoDB", image: "/images/logo-mongodb.svg" },
+];
 ---
+
 <DefaultLayout>
   <main class="flex flex-col gap-8">
     <section id="profile" class="flex flex-col gap-4">
       <div class="flex flex-col md:flex-row items-center gap-4">
         <div class="flex flex-col gap-4">
-          <h1 class="text-2xl font-bold">Rodrigo Pardo Gatica</h1>
+          <h1 class="text-4xl font-bold">Rodrigo Pardo Gatica</h1>
           <p class="text-xl">
-            <a href="#formation"><strong class="text-white underline decoration-primary">Ingeniero de software</strong></a> con más de <strong class="text-primary">3 años de experiencia</strong>,
-            especializado en desarrollo web y la arquitectura de software.
-            Apasionado por la calidad del código, el diseño escalable y la
-            mejora continua.
+            <a href="#formation">
+              <strong class="text-white underline decoration-primary">Ingeniero de software</strong>
+            </a> con más de <strong class="text-primary">3 años de experiencia</strong>,
+            especializado en desarrollo web y la arquitectura de software. Apasionado por la calidad
+            del código, el diseño escalable y la mejora continua.
           </p>
           <div class="flex flex-wrap gap-2 items-center">
-            <a href={`mailto:${myEmail}`} class="flex gap-1 b items-center order rounded-lg bg-secondary text-black px-3 h-10 text-center font-semibold cursor-pointer">
+            <a
+              href={`mailto:${myEmail}`}
+              class="flex gap-1 b items-center order rounded-lg bg-secondary text-black px-3 h-10 text-center font-semibold cursor-pointer"
+            >
               <GmailLogo />
               Contáctame
             </a>
-            <a href="/cv_rodrigo_pardo_v2_es.pdf" download class="flex gap-1 b items-center order border rounded-lg bg-background text-primary px-3 h-10 text-center font-semibold cursor-pointer">
+            <a
+              href="/cv_rodrigo_pardo_v2_es.pdf"
+              download
+              class="flex gap-1 b items-center order border rounded-lg bg-background text-primary px-3 h-10 text-center font-semibold cursor-pointer"
+            >
               Descarga mi CV
             </a>
             <div class="flex">
@@ -57,38 +65,55 @@ const stack = [
       </div>
       <div>
         <ul class="flex gap-1 sm:gap-2 items-center flex-wrap justify-center">
-          {stack.map((technology) => <li><img src={technology.image} alt={technology.name} width={45} height={45} /></li>)}
+          {
+            stack.map((technology) => (
+              <li>
+                <img src={technology.image} alt={technology.name} width={45} height={45} />
+              </li>
+            ))
+          }
         </ul>
-        <div class="w-full border-t border-primary relative my-1"><p class="text-sm px-2 bg-background absolute top-0 left-1/2 -translate-y-3 -translate-x-1/2">Stack</p></div>
+        <div class="w-full border-t border-primary relative my-1">
+          <p
+            class="text-sm px-2 bg-background absolute top-0 left-1/2 -translate-y-3 -translate-x-1/2"
+          >
+            Stack
+          </p>
+        </div>
       </div>
     </section>
     <section class="flex flex-col gap-4" id="experience">
       <h2 class="text-2xl font-semibold underline decoration-primary">Experiencia</h2>
       {
-      jobs.map((job) => (
-        <JobCard
-          title={job.title}
-          organization={job.organization}
-          description={job.description}
-          startDate={job.start}
-          endDate={job.end}
-        />
-      ))
+        jobs.map((job) => (
+          <JobCard
+            title={job.title}
+            organization={job.organization}
+            description={job.description}
+            startDate={job.start}
+            endDate={job.end}
+          />
+        ))
       }
     </section>
     <section class="flex flex-col gap-4 relative" id="projects">
-      <div class="absolute bottom-1 md:left-1/3 -z-10 h-[20rem] w-[20rem] rounded-full bg-primary blur-[300px]"></div>
+      <div
+        class="absolute bottom-1 md:left-1/3 -z-10 h-[20rem] w-[20rem] rounded-full bg-primary blur-[300px]"
+      >
+      </div>
       <h2 class="text-2xl font-semibold underline decoration-primary">Proyectos</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {projects.map((job) => (
-          <ProjectCard
-            title={job.title}
-            description={job.description}
-            image={job.image}
-            url={job.url}
-            stack={job.stack}
-          />
-        ))}
+        {
+          projects.map((job) => (
+            <ProjectCard
+              title={job.title}
+              description={job.description}
+              image={job.image}
+              url={job.url}
+              stack={job.stack}
+            />
+          ))
+        }
       </div>
     </section>
     <section class="flex flex-col gap-4 relative" id="formation">
@@ -115,7 +140,9 @@ const stack = [
           <a href="https://www.linkedin.com/in/rodrigo-pardo-gatica-07331b218/" target="_blank">
             <button type="button" class="flex gap-2 items-center cursor-pointer">
               <LinkedinLogo width={45} height={45} />
-              <span class="text-white underline decoration-primary text-lg" >@rodrigo-pardo-gatica</span>
+              <span class="text-white underline decoration-primary text-lg"
+                >@rodrigo-pardo-gatica</span
+              >
             </button>
           </a>
         </li>

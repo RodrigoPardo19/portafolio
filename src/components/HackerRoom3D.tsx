@@ -1,8 +1,8 @@
-import React, { Suspense, useEffect, useRef } from 'react';
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import Loading from './Loading';
+import React, { Suspense, useEffect, useRef } from "react";
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import Loading from "./Loading";
 
 interface Props {
   hackerRoomUrl: string;
@@ -21,7 +21,7 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
       45,
       mountRef.current.clientWidth / mountRef.current.clientHeight,
       0.1,
-      2000
+      2000,
     );
     camera.position.set(0, 40, 70);
 
@@ -47,7 +47,7 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
     function loadModel(url: string, scale: number, position: THREE.Vector3, rotationY = 0) {
       loader.load(
         url,
-        gltf => {
+        (gltf) => {
           const model = gltf.scene;
           hackerRoom = gltf.scene;
           model.scale.set(scale, scale, scale);
@@ -57,12 +57,12 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
 
           if (gltf.animations?.length) {
             const mixer = new THREE.AnimationMixer(model);
-            gltf.animations.forEach(clip => mixer.clipAction(clip).play());
+            gltf.animations.forEach((clip) => mixer.clipAction(clip).play());
             mixers.push(mixer);
           }
         },
         undefined,
-        err => console.error('Error loading', url, err)
+        (err) => console.error("Error loading", url, err),
       );
     }
 
@@ -76,10 +76,10 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
 
     const animate = () => {
       const delta = clock.getDelta();
-      mixers.forEach(mixer => mixer.update(delta));
+      mixers.forEach((mixer) => mixer.update(delta));
       controls.update();
       if (hackerRoom) {
-        hackerRoom.rotation.y += 0.005
+        hackerRoom.rotation.y += 0.005;
       }
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
@@ -93,17 +93,16 @@ const HackerRoom: React.FC<Props> = ({ hackerRoomUrl }) => {
       camera.updateProjectionMatrix();
       renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       mountRef.current?.removeChild(renderer.domElement);
-      mixers.forEach(mixer => mixer.stopAllAction());
+      mixers.forEach((mixer) => mixer.stopAllAction());
     };
   }, [hackerRoomUrl]);
 
-  return <div ref={mountRef} style={{ width: '100%', height: '30vh' }} />;
+  return <div ref={mountRef} style={{ width: "100%", height: "30vh" }} />;
 };
 
 export default HackerRoom;
-

@@ -1,11 +1,12 @@
 ---
 import "../styles/global.css";
+import "@fontsource/m-plus-rounded-1c";
 import Navbar from "@/components/Navbar";
 import Scene3D from "@/components/Scene3D";
 import Footer from "@/components/Footer";
 import { ClientRouter } from "astro:transitions";
 
-const year = new Date().getFullYear()
+const year = new Date().getFullYear();
 ---
 
 <html lang="es">
@@ -21,8 +22,8 @@ const year = new Date().getFullYear()
   <body class="max-w-screen-sm m-auto bg-background text-white px-4">
     <header>
       <Navbar client:only />
-      <div class="pt-28">
-        <Scene3D client:only />
+      <div class="pt-28 pb-8">
+        <Scene3D client:only transition:persist />
       </div>
     </header>
     <slot />

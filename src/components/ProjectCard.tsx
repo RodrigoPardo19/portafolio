@@ -21,10 +21,16 @@ export default function ProjectCard({ title, description, stack, image, url }: P
         </div>
         <p className="">{description}</p>
         <ul className="flex gap-2 items-center">
-          {stack.map((technology) =>
+          {stack.map((technology) => (
             <li key={technology.name}>
-              <img src={technology.icon} alt={technology.name} width={(technology.name !== 'Next' && technology.name !== 'MySQL') ? 30 : 50} height={(technology.name !== 'Next' && technology.name !== 'MySQL') ? 30 : 50} />
-            </li>)}
+              <img
+                src={technology.icon}
+                alt={technology.name}
+                width={technology.name !== "Next" && technology.name !== "MySQL" ? 30 : 50}
+                height={technology.name !== "Next" && technology.name !== "MySQL" ? 30 : 50}
+              />
+            </li>
+          ))}
         </ul>
       </div>
     </a>

@@ -21,3 +21,4 @@ For complete setup instructions, please see our [Tailwind Integration Guide](htt
 - [ ] Agregar Open Graph
 - [ ] Add English versión
 - [ ] Add light mode
+- [ ] Crear página de not found

@@ -1,19 +1,59 @@
 ---
 import type { GetStaticPaths } from "astro";
-import projects from "@/data/projects.json"
+import projects from "@/data/projects.json";
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import Badge from "@/components/Badge";
 
 export const getStaticPaths = (() => {
   return projects.map((project) => {
-    return { params: { project: project.title }}
-  })
+    return { params: { project: project.title } };
+  });
 }) satisfies GetStaticPaths;
 
-const { project } = Astro.params
+const { project } = Astro.params;
+
+const paths = [
+  { name: "Projects", url: "/#projects" },
+  { name: project, url: `#description` },
+];
+
+const currentProject = projects.find((p) => p.title === project);
 ---
 
 <DefaultLayout>
-  <main>
-    <h1>{project}</h1>
+  <main class="flex flex-col gap-8">
+    <Breadcrumbs paths={paths} currentPath={project} />
+    <section id="description">
+      <p class="indent-3">{currentProject?.description}</p>
+    </section>
+    <section id="tags">
+      <p>
+        <Badge title="Stack" />
+        {
+          currentProject?.stack.map(
+            (t, index) => `${t.name}${index < currentProject.stack.length - 1 ? ", " : ""}`,
+          )
+        }
+      </p>
+      <p>
+        <Badge title="Website" />
+        {
+          currentProject?.url ? (
+            <a href={currentProject?.url} target="_blank" class="text-primary">
+              {currentProject?.url}
+            </a>
+          ) : (
+            "Este es un proyecto privado y no se puede compartir una url :c"
+          )
+        }
+      </p>
+      <p>
+        <Badge title="Company" />
+        <a href={currentProject?.company.url} target="_blank" class="text-primary">
+          {currentProject?.company.name}
+        </a>
+      </p>
+    </section>
   </main>
 </DefaultLayout>

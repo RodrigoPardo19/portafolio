@@ -1,250 +1,282 @@
 [
-   {
-      "title":"Ecoendpoint",
-      "description":"Plataforma en tiempo real de monitoreo de impresoras y automatización de tareas.",
-      "image": "/images/ecoprintq_bg.png",
-      "url":"https://admin.ecoendpoint.com/v2rc/#/auth/login",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Express",
-            "icon":"/images/logo-express.svg"
-         },
-         {
-            "name":"Angular",
-            "icon":"/images/logo-angular.svg"
-         },
-         {
-            "name":"PostgreSQL",
-            "icon":"/images/logo-postgresql.svg"
-         },
-         {
-            "name":"GCP",
-            "icon":"/images/logo-gcp.svg"
-         },
-         {
-            "name":"Socket.io",
-            "icon":"/images/logo-socket-io.svg"
-         },
-         {
-            "name":"Tailwind",
-            "icon":"/images/logo-tailwindcss.svg"
-         }
-      ]
-   },
-   {
-      "title":"Soldautos",
-      "description":"Sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares.",
-      "image": "/images/soldautos.jpg",
-      "url":"https://soldautos.cl/",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Nest Js",
-            "icon":"/images/logo-nestjs.svg"
-         },
-         {
-            "name":"Vue",
-            "icon":"/images/logo-vue.svg"
-         },
-         {
-            "name":"Nuxt",
-            "icon":"/images/logo-nuxt.svg"
-         },
-         {
-            "name":"AWS",
-            "icon":"/images/logo-aws.svg"
-         },
-         {
-            "name":"MongoDB",
-            "icon":"/images/logo-mongodb.svg"
-         },
-         {
-            "name":"Tailwind",
-            "icon":"/images/logo-tailwindcss.svg"
-         }
-      ]
-   },
-   {
-      "title":"Buscador de convenios",
-      "description":"Sistema de búsqueda de convenios nacionales e internacionales de la Universidad de La Frontera.",
-      "image": "/images/ufro.png",
-      "url":"",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Nest Js",
-            "icon":"/images/logo-nestjs.svg"
-         },
-         {
-            "name":"React",
-            "icon":"/images/logo-react.svg"
-         },
-         {
-            "name":"Next",
-            "icon":"/images/logo-nextjs.svg"
-         },
-         {
-            "name":"MySQL",
-            "icon":"/images/logo-mysql.svg"
-         },
-         {
-            "name":"Tailwind",
-            "icon":"/images/logo-tailwindcss.svg"
-         }
-      ]
-   },
-   {
-      "title":"SISDAE",
-      "description":"Sistema para la gestión de recursos y beneficios estudiantiles de la Universidad de La Frontera.",
-      "image": "/images/ufro.png",
-      "url":"",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Nest Js",
-            "icon":"/images/logo-nestjs.svg"
-         },
-         {
-            "name":"React",
-            "icon":"/images/logo-react.svg"
-         },
-         {
-            "name":"Next",
-            "icon":"/images/logo-nextjs.svg"
-         },
-         {
-            "name":"MySQL",
-            "icon":"/images/logo-mysql.svg"
-         },
-         {
-            "name":"Tailwind",
-            "icon":"/images/logo-tailwindcss.svg"
-         }
-      ]
-   },
-   {
-      "title":"Acreditación y mejora continua",
-      "description":"Sistema de seguimiento y recolección de información para la acreditación y mejora continua de la Universidad de La Frontera.",
-      "image": "/images/ufro.png",
-      "url":"",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Nest Js",
-            "icon":"/images/logo-nestjs.svg"
-         },
-         {
-            "name":"Vue",
-            "icon":"/images/logo-vue.svg"
-         },
-         {
-            "name":"MySQL",
-            "icon":"/images/logo-mysql.svg"
-         },
-         {
-            "name":"Tailwind",
-            "icon":"/images/logo-tailwindcss.svg"
-         }
-      ]
-   },
-   {
-      "title":"Evaluación académica",
-      "description":"Sistema de evaluación docente para la Universidad de La Frontera.",
-      "image": "/images/ufro.png",
-      "url":"",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Nest Js",
-            "icon":"/images/logo-nestjs.svg"
-         },
-         {
-            "name":"Vue",
-            "icon":"/images/logo-vue.svg"
-         },
-         {
-            "name":"MySQL",
-            "icon":"/images/logo-mysql.svg"
-         },
-         {
-            "name":"Tailwind",
-            "icon":"/images/logo-tailwindcss.svg"
-         }
-      ]
-   },
-   {
-      "title":"Otakuverse",
-      "description":"Sitio web para la comunidad otaku, con foros y publicaciones de anime y manga.",
-      "image": "/images/otakuverse_1.jpeg",
-      "url":"",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Nest Js",
-            "icon":"/images/logo-nestjs.svg"
-         },
-         {
-            "name":"React",
-            "icon":"/images/logo-react.svg"
-         },
-         {
-            "name":"Next",
-            "icon":"/images/logo-nextjs.svg"
-         },
-         {
-            "name":"PostgreSQL",
-            "icon":"/images/logo-postgresql.svg"
-         }
-      ]
-   },
-   {
-      "title": "Ecosuelolab",
-      "description":"Aplicación que permite monitorear y gestionar datos agrícolas de varios clientes, facilitando el acceso y análisis centralizado de información clave sobre potreros y sectores, con un enfoque en eficiencia y facilidad de uso.",
-      "image": "/images/ecosuelolab.png",
-      "url": "https://play.google.com/store/apps/details?id=cl.ecosuelolab.mobile&hl=es_CL",
-      "stack":[
-         {
-            "name":"Node",
-            "icon":"/images/logo-nodejs.svg"
-         },
-         {
-            "name":"Nest Js",
-            "icon":"/images/logo-nestjs.svg"
-         },
-         {
-            "name":"React",
-            "icon":"/images/logo-react.svg"
-         },
-         {
-            "name":"Next",
-            "icon":"/images/logo-nextjs.svg"
-         },
-         {
-            "name":"PostgreSQL",
-            "icon":"/images/logo-postgresql.svg"
-         }
-      ]
-   }
+  {
+    "title": "Ecoendpoint",
+    "description": "Plataforma en tiempo real de monitoreo de impresoras y automatización de tareas.",
+    "image": "/images/ecoprintq_bg.png",
+    "url": "https://admin.ecoendpoint.com/v2rc/#/auth/login",
+    "company": {
+      "name": "EcoprintQ",
+      "url": "https://www.ecoprintq.com/"
+    },
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Express",
+        "icon": "/images/logo-express.svg"
+      },
+      {
+        "name": "Angular",
+        "icon": "/images/logo-angular.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "/images/logo-postgresql.svg"
+      },
+      {
+        "name": "GCP",
+        "icon": "/images/logo-gcp.svg"
+      },
+      {
+        "name": "Socket.io",
+        "icon": "/images/logo-socket-io.svg"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/images/logo-tailwindcss.svg"
+      }
+    ]
+  },
+  {
+    "title": "Soldautos",
+    "description": "Sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares.",
+    "image": "/images/soldautos.jpg",
+    "url": "https://soldautos.cl/",
+    "company": {
+      "name": "Soldautos",
+      "url": "https://soldautos.cl/"
+    },
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Nest Js",
+        "icon": "/images/logo-nestjs.svg"
+      },
+      {
+        "name": "Vue",
+        "icon": "/images/logo-vue.svg"
+      },
+      {
+        "name": "Nuxt",
+        "icon": "/images/logo-nuxt.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "/images/logo-aws.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "/images/logo-mongodb.svg"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/images/logo-tailwindcss.svg"
+      }
+    ]
+  },
+  {
+    "title": "Buscador de convenios",
+    "description": "Sistema de búsqueda de convenios nacionales e internacionales de la Universidad de La Frontera.",
+    "image": "/images/ufro.png",
+    "company": {
+      "name": "Universidad de La Frontera",
+      "url": "https://www.ufro.cl/"
+    },
+    "url": null,
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Nest Js",
+        "icon": "/images/logo-nestjs.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/images/logo-react.svg"
+      },
+      {
+        "name": "Next",
+        "icon": "/images/logo-nextjs.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/images/logo-mysql.svg"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/images/logo-tailwindcss.svg"
+      }
+    ]
+  },
+  {
+    "title": "SISDAE",
+    "description": "Sistema para la gestión de recursos y beneficios estudiantiles de la Universidad de La Frontera.",
+    "image": "/images/ufro.png",
+    "company": {
+      "name": "Universidad de La Frontera",
+      "url": "https://www.ufro.cl/"
+    },
+    "url": null,
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Nest Js",
+        "icon": "/images/logo-nestjs.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/images/logo-react.svg"
+      },
+      {
+        "name": "Next",
+        "icon": "/images/logo-nextjs.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/images/logo-mysql.svg"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/images/logo-tailwindcss.svg"
+      }
+    ]
+  },
+  {
+    "title": "Acreditación y mejora continua",
+    "description": "Sistema de seguimiento y recolección de información para la acreditación y mejora continua de la Universidad de La Frontera.",
+    "image": "/images/ufro.png",
+    "company": {
+      "name": "Universidad de La Frontera",
+      "url": "https://www.ufro.cl/"
+    },
+    "url": null,
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Nest Js",
+        "icon": "/images/logo-nestjs.svg"
+      },
+      {
+        "name": "Vue",
+        "icon": "/images/logo-vue.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/images/logo-mysql.svg"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/images/logo-tailwindcss.svg"
+      }
+    ]
+  },
+  {
+    "title": "Evaluación académica",
+    "description": "Sistema de evaluación docente para la Universidad de La Frontera.",
+    "image": "/images/ufro.png",
+    "company": {
+      "name": "Universidad de La Frontera",
+      "url": "https://www.ufro.cl/"
+    },
+    "url": null,
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Nest Js",
+        "icon": "/images/logo-nestjs.svg"
+      },
+      {
+        "name": "Vue",
+        "icon": "/images/logo-vue.svg"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/images/logo-mysql.svg"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/images/logo-tailwindcss.svg"
+      }
+    ]
+  },
+  {
+    "title": "Otakuverse",
+    "description": "Sitio web para la comunidad otaku, con foros y publicaciones de anime y manga.",
+    "image": "/images/otakuverse_1.jpeg",
+    "company": {
+      "name": "Otakuverse",
+      "url": "https://otakuverse.com"
+    },
+    "url": "https://otakuverse.com",
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Nest Js",
+        "icon": "/images/logo-nestjs.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/images/logo-react.svg"
+      },
+      {
+        "name": "Next",
+        "icon": "/images/logo-nextjs.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "/images/logo-postgresql.svg"
+      }
+    ]
+  },
+  {
+    "title": "Ecosuelolab",
+    "description": "Aplicación que permite monitorear y gestionar datos agrícolas de varios clientes, facilitando el acceso y análisis centralizado de información clave sobre potreros y sectores, con un enfoque en eficiencia y facilidad de uso.",
+    "image": "/images/ecosuelolab.png",
+    "company": {
+      "name": "Ecosuelolab",
+      "url": "https://www.ecosuelolab.com/"
+    },
+    "url": "https://play.google.com/store/apps/details?id=cl.ecosuelolab.mobile&hl=es_CL",
+    "stack": [
+      {
+        "name": "Node",
+        "icon": "/images/logo-nodejs.svg"
+      },
+      {
+        "name": "Nest Js",
+        "icon": "/images/logo-nestjs.svg"
+      },
+      {
+        "name": "React",
+        "icon": "/images/logo-react.svg"
+      },
+      {
+        "name": "Next",
+        "icon": "/images/logo-nextjs.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "/images/logo-postgresql.svg"
+      }
+    ]
+  }
 ]
