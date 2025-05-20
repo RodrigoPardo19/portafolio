@@ -1,0 +1,14 @@
+---
+import Badge from "@/components/Badge";
+import DefaultLayout from "@/layouts/DefaultLayout.astro";
+
+const path = Astro.request.url;
+const pathname = new URL(path).pathname;
+---
+
+<DefaultLayout>
+  <main class="flex justify-center items-center flex-col gap-8">
+    <h1 class="text-4xl font-bold"><span class="text-primary">404:</span> Not found</h1>
+    <Badge title={`path: ${pathname}`} />
+  </main>
+</DefaultLayout>

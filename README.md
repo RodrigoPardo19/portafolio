@@ -16,7 +16,7 @@ For complete setup instructions, please see our [Tailwind Integration Guide](htt
 
 - [x] Add Layout and page transitions
 - [x] Add a project page
-- [ ] Crear página de not found
+- [x] Crear página de not found
 - [ ] Add final CV
 - [ ] Agregar algunas animaciones
 - [ ] Agregar Open Graph
