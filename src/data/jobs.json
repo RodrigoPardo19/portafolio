@@ -3,8 +3,11 @@
     "title": "Desarrollador Full Stack",
     "organization": "Ecoprintq Chile",
     "description": [
-      "Responsable del desarrollo del producto principal de la empresa, una aplicación en tiempo real que procesa grandes volúmenes de datos concurrentes. Implementé nuevas funcionalidades y optimizaciones que mejoraron significativamente la eficiencia y calidad del sistema, lo que permitió escalar el producto e impulsar su adopción por parte de clientes corporativos de alto perfil como Falabella, Ricoh LATAM, HP y Agrosuper.",
-      "Se abordaron incidencias críticas de origen desconocido en el producto principal, mediante una estrategia de investigación y pruebas estructuradas. El proceso no solo resolvió los problemas principales, sino que también permitió optimizar otros componentes del sistema, mejorando la estabilidad general del producto."
+      "Responsable del desarrollo del producto principal de la empresa, una plataforma de automatización de tareas en tiempo real, con una gran cantidad de procesamiento de datos concurrentes.",
+      "Implementé nuevas funcionalidades y optimizaciones que mejoraron significativamente la eficiencia, calidad y estabilidad del sistema, fortaleciendo el producto y eliminando errores críticos.",
+      "Solucioné incidencias críticas del sistema mediante un sistema de investigación, documentación y pruebas controladas.",
+      "La resolución de estas fallas permitió optimizar componentes adicionales y mejorar la estabilidad general del sistema. Esto redujo significativamente el tiempo destinado a soporte y fortaleció la confianza del cliente durante presentaciones, facilitando la comercialización del producto.",
+      "Estas mejoras facilitaron la escalabilidad del producto y su adopción por parte de grandes clientes como Falabella, Ricoh LATAM, HP y Agrosuper."
     ],
     "start": "SEP 2024"
   },
@@ -12,10 +15,12 @@
     "title": "Desarrollador Full Stack",
     "organization": "Acroventus SPA",
     "description": [
-      "Liderazgo del desarrollo full stack de la plataforma soldautos.cl, un sitio de compra y venta de vehículos nuevos y usados para automotoras y particulares. Me encargué del diseño de la arquitectura, coordinación con desarrolladores junior, comunicación directa con el cliente y desarollo de las funcionalidades. El sitio lleva más de 2 años en producción y cuenta con un catálogo activo de más de mil publicaciones.",
-      "Desarrollo de sistema de acreditación y mejora continua para la Universidad de La Frontera, que digitalizó completamente el proceso de recolección de evidencias para la acreditación institucional, reemplazando flujos manuales y acelerando significativamente los tiempos del proceso de acreditación de la universidad.",
-      "Implementación de buenas prácticas en el desarrollo de software, incorporando, arquitecturas limpias, principios SOLID y estrategias de testing. Estas iniciativas permitieron estandarizar metodologías y establecer guías reutilizables que fueron adoptadas por otros equipos y proyectos futuros dentro de la empresa.",
-      "Desarrollo de herramientas internas para optimizar procesos clave de la empresa, como un sistema para digitalizar la toma de requerimientos y una CLI para generar nuevos proyectos con flujos preconfigurados (autenticación, despliegues, integraciones con APIs como WhatsApp y Slack). Estas soluciones, aumentaron la productividad y redujeron tiempos de desarrollo de los nuevos proyectos."
+      "Lideré el desarrollo full stack de soldautos.cl, una plataforma de compra y venta de vehículos para automotoras y particulares.",
+      "Esto permitió al cliente abrir una nueva línea de negocio, facilitando la venta a diversas automotoras importantes del sector. Como resultado, el sitio mantiene un catálogo activo con más de mil publicaciones.",
+      "Diseñé la arquitectura de varios sistemas y coordiné al equipo de desarrolladores, lo que permitió entregar con éxito múltiples proyectos a nuestros clientes.",
+      "Implementé y realicé mentorías sobre buenas prácticas de desarrollo (arquitectura limpia, principios SOLID, testing), lo que permitió estandarizar metodologías y mejorar la calidad del código en múltiples equipos de la empresa.",
+      "Desarrollé herramientas internas, incluyendo un sistema para la toma de requerimientos (Sprint Zero) y una CLI para la configuración de nuevos proyectos.",
+      "Estas herramientas permitieron reutilizar integraciones comunes (autenticación, despliegues, APIs como WhatsApp y Slack), reduciendo tiempos de desarrollo y mejorando la productividad en nuevos proyectos."
     ],
     "start": "NOV 2022",
     "end": "MAY 2024"
@@ -24,8 +29,10 @@
     "title": "Desarrollador Full stack",
     "organization": "MINEDUC-UFRO",
     "description": [
-      "Desarrollo de un sistema de búsqueda avanzada de convenios para la Universidad de La Frontera, implementando funcionalidades tanto en frontend como backend. La plataforma digitalizó el acceso a convenios nacionales e internacionales, optimizando un proceso que antes se realizaba manualmente. Gracias al impacto del proyecto, la universidad decidió seguir financiando nuevas iniciativas con nuestro equipo de desarrollo.",
-      "Desarrollo y participación en el diseño arquitectónico de SISDAE, un sistema para la gestión de recursos y beneficios estudiantiles de la Universidad de La Frontera. El desempeño en este y otros proyectos despertó el interés de Acroventus, empresa externa encargada de otros desarrollos para la universidad, quienes posteriormente me ofrecieron incorporarme a su equipo de forma indefinida."
+      "Desarrollé un sistema que digitalizó el acceso a convenios nacionales e internacionales de la Universidad de La Frontera, reemplazando procesos manuales y mejorando significativamente la eficiencia operativa.",
+      "Gracias al impacto del proyecto, la universidad decidió continuar financiando nuevas iniciativas con nuestro equipo.",
+      "Desarrollé y participé en el diseño arquitectónico de SISDAE, un sistema para la gestión de recursos y beneficios estudiantiles de la Universidad de La Frontera.",
+      "Mi desempeño en este y otros proyectos llevó a que Acroventus, empresa externa encargada de otros desarrollos, me ofreciera unirme a su equipo de forma indefinida."
     ],
     "start": "MAR 2022",
     "end": "OCT 2022"
