@@ -24,10 +24,10 @@ const currentProject = projects.find((p) => p.title === project);
 <DefaultLayout>
   <main class="flex flex-col gap-8">
     <div class="flex items-center">
-      <Breadcrumbs paths={paths} currentPath={project} />
+      <Breadcrumbs currentPath={project} paths={paths} />
       {currentProject?.sideProject ? <Badge title="sideproject" /> : null}
     </div>
-    <section id="description">
+    <section class="hyphens-auto" id="description" title="hola">
       {
         Array.isArray(currentProject?.description) ? (
           currentProject.description.map((d) => (
@@ -51,7 +51,7 @@ const currentProject = projects.find((p) => p.title === project);
         <Badge title="Website" />
         {
           currentProject?.url ? (
-            <a href={currentProject?.url} target="_blank" class="text-primary">
+            <a class="text-primary" href={currentProject?.url} target="_blank">
               {currentProject?.url}
             </a>
           ) : (
@@ -63,7 +63,7 @@ const currentProject = projects.find((p) => p.title === project);
         currentProject?.company ? (
           <p>
             <Badge title="Company" />
-            <a href={currentProject?.company.url} target="_blank" class="text-primary">
+            <a class="text-primary" href={currentProject?.company.url} target="_blank">
               {currentProject?.company.name}
             </a>
           </p>
@@ -74,7 +74,7 @@ const currentProject = projects.find((p) => p.title === project);
           currentProject?.sideProject ? (
             <p>
               <Badge title="Github" />
-              <a href={currentProject?.repo} target="_blank" class="text-primary">
+              <a class="text-primary" href={currentProject?.repo} target="_blank">
                 {currentProject?.repo}
               </a>
             </p>
