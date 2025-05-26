@@ -1,5 +1,3 @@
-import { div } from "three/src/nodes/TSL.js";
-
 interface Props {
   start: string;
   end?: string;

@@ -19,7 +19,9 @@ export default function ProjectCard({ title, summary, stack, image, sideProject 
       <div className="flex flex-col gap-1">
         <img src={image} alt="soldautos-project" className="rounded-xl object-cover border h-40" />
         <div className="flex flex-col">
-          <p className="text-primary font-semibold">{title} {sideProject ? <Badge title="sideproject" /> : ''}</p>
+          <p className="text-primary font-semibold">
+            {title} {sideProject ? <Badge title="sideproject" /> : ""}
+          </p>
         </div>
         <p className="">{summary}</p>
         <ul className="flex gap-2 items-center">

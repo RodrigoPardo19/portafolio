@@ -10,6 +10,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [react()],
-  site: 'https://RodrigoPardo19.github.io',
-  base: '/portafolio'
+  site: "https://RodrigoPardo19.github.io",
+  base: "/portafolio",
 });
